@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- SUNNY-EDIT-VERSION-17-STAMP-GROUPING-REORDER -->
+<!-- SUNNY-EDIT-VERSION-18-MULTI-STAMP -->
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
@@ -2189,17 +2189,7 @@ cameraStampBtn.addEventListener('click', ()=>{
     }, 2600);
     return;
   }
-  const existing = textLayers.find(t=>t.id === cameraStampLayerId);
-  if(existing){
-    existing.text = text;
-    renderLayerList();
-    if(selectedTextId === existing.id) syncEditFields();
-    draw();
-  } else {
-    addTextLayer(text, {stamp:true});
-    cameraStampLayerId = selectedTextId;
-    cameraStampBtn.textContent = '텍스트 업데이트';
-  }
+  addTextLayer(text, {stamp:true});
 });
 
 /* ---------- shape / photo controls ---------- */
@@ -2438,7 +2428,6 @@ function renderLayerList(){
       e.stopPropagation();
       textLayers = textLayers.filter(t=>t.id !== layer.id);
       if(selectedTextId === layer.id) selectedTextId = null;
-      if(cameraStampLayerId === layer.id){ cameraStampLayerId = null; cameraStampBtn.textContent = '텍스트로 추가'; }
       renderLayerList();
       syncEditFields();
       draw();
@@ -2509,7 +2498,6 @@ boldToggle.addEventListener('click', ()=>{
 deleteTextBtn.addEventListener('click', ()=>{
   const layer = currentLayer(); if(!layer) return;
   textLayers = textLayers.filter(t=>t.id !== layer.id);
-  if(cameraStampLayerId === layer.id){ cameraStampLayerId = null; cameraStampBtn.textContent = '텍스트로 추가'; }
   selectedTextId = null;
   renderLayerList();
   syncEditFields();
