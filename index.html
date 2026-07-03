@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- SUNNY-EDIT-VERSION-9-COLLAGE -->
+<!-- SUNNY-EDIT-VERSION-10-COLLAGE-COMPACT -->
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
@@ -262,6 +262,22 @@ html,body{
   justify-content:space-between;
   align-items:center;
 }
+
+.add-inline-btn{
+  background:var(--panel-raised);
+  border:1px solid var(--rule);
+  color:var(--accent);
+  font-family:'Inter',sans-serif;
+  font-size:11px;
+  letter-spacing:0;
+  text-transform:none;
+  font-weight:600;
+  padding:6px 11px;
+  border-radius:100px;
+  cursor:pointer;
+  transition:border-color .12s, background .12s;
+}
+.add-inline-btn:hover{border-color:var(--accent-dim); background:rgba(231,161,58,0.1);}
 
 .shape-grid{
   display:grid;
@@ -959,6 +975,37 @@ select{
           <button class="btn primary small-tile" id="downloadBtn" disabled>다운로드</button>
         </div>
       </div>
+
+      <div class="control-group compact-group no-border">
+        <h3>
+          콜라주 스티커
+          <button class="add-inline-btn" id="addPhotoStickerBtn">+ 사진 추가</button>
+        </h3>
+        <div class="text-empty" id="photoStickerEmpty">아직 추가된 사진이 없어요.</div>
+        <div class="layer-list" id="photoLayerList"></div>
+        <div class="text-edit" id="photoStickerEdit" style="display:none;">
+          <div class="bg-row" style="margin-bottom:12px;">
+            <select id="stickerShapeSelect" class="bg-type-select">
+              <option value="rounded">둥근 사각형</option>
+              <option value="circle">원형</option>
+              <option value="rect">사각형</option>
+            </select>
+            <div class="tri-slider-col">
+              <label>크기 <span class="val" id="stickerSizeVal">240px</span></label>
+              <input type="range" id="stickerSizeSlider" min="60" max="700" value="240">
+            </div>
+          </div>
+          <div class="field-row">
+            <div>
+              <button class="btn secondary small full" id="stickerBorderToggle" style="width:100%;">흰 테두리 켜기</button>
+            </div>
+            <div>
+              <button class="btn danger-outline small full" id="deleteStickerBtn" style="width:100%;">삭제</button>
+            </div>
+          </div>
+        </div>
+        <input type="file" id="stickerFileInput" class="file-input" accept="image/*" multiple>
+      </div>
     </div>
 
     <div class="panel">
@@ -1069,33 +1116,6 @@ select{
           </div>
         </div>
         <button class="btn primary full" id="cameraStampBtn" style="margin-top:10px; display:none;">텍스트로 추가</button>
-      </div>
-
-      <div class="control-group compact-group">
-        <h3>콜라주 스티커</h3>
-        <button class="btn secondary full" id="addPhotoStickerBtn" style="margin-bottom:14px;">+ 사진 추가</button>
-        <div class="text-empty" id="photoStickerEmpty">아직 추가된 사진이 없어요.</div>
-        <div class="layer-list" id="photoLayerList"></div>
-        <div class="text-edit" id="photoStickerEdit" style="display:none;">
-          <div class="shape-grid" id="stickerShapeGrid" style="grid-template-columns:repeat(3,1fr); margin-bottom:14px;">
-            <button class="shape-btn active" data-shape="rounded">둥근 사각형</button>
-            <button class="shape-btn" data-shape="circle">원형</button>
-            <button class="shape-btn" data-shape="rect">사각형</button>
-          </div>
-          <div class="slider-row">
-            <label>크기 <span class="val" id="stickerSizeVal">240px</span></label>
-            <input type="range" id="stickerSizeSlider" min="60" max="700" value="240">
-          </div>
-          <div class="field-row" style="margin-top:12px;">
-            <div>
-              <button class="btn secondary small full" id="stickerBorderToggle" style="width:100%;">흰 테두리 켜기</button>
-            </div>
-            <div>
-              <button class="btn danger-outline small full" id="deleteStickerBtn" style="width:100%;">삭제</button>
-            </div>
-          </div>
-        </div>
-        <input type="file" id="stickerFileInput" class="file-input" accept="image/*" multiple>
       </div>
 
       <div class="control-group compact-group">
@@ -1262,7 +1282,7 @@ const stickerFileInput = document.getElementById('stickerFileInput');
 const photoStickerEmpty = document.getElementById('photoStickerEmpty');
 const photoLayerList = document.getElementById('photoLayerList');
 const photoStickerEdit = document.getElementById('photoStickerEdit');
-const stickerShapeGrid = document.getElementById('stickerShapeGrid');
+const stickerShapeSelect = document.getElementById('stickerShapeSelect');
 const stickerSizeSlider = document.getElementById('stickerSizeSlider');
 const stickerSizeVal = document.getElementById('stickerSizeVal');
 const stickerBorderToggle = document.getElementById('stickerBorderToggle');
@@ -2489,19 +2509,14 @@ function syncStickerEditFields(){
   photoStickerEdit.style.display = 'block';
   stickerSizeSlider.value = layer.size;
   stickerSizeVal.textContent = Math.round(layer.size) + 'px';
-  stickerShapeGrid.querySelectorAll('.shape-btn').forEach(b=>{
-    b.classList.toggle('active', b.dataset.shape === layer.shape);
-  });
+  stickerShapeSelect.value = layer.shape;
   stickerBorderToggle.textContent = layer.border ? '흰 테두리 끄기' : '흰 테두리 켜기';
   stickerBorderToggle.classList.toggle('active', layer.border);
 }
 
-stickerShapeGrid.addEventListener('click', (e)=>{
-  const btn = e.target.closest('.shape-btn');
-  if(!btn) return;
+stickerShapeSelect.addEventListener('change', ()=>{
   const layer = currentPhotoLayer(); if(!layer) return;
-  layer.shape = btn.dataset.shape;
-  syncStickerEditFields();
+  layer.shape = stickerShapeSelect.value;
   draw();
 });
 
