@@ -1,0 +1,2121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Frame & Print — 사진 배경 스튜디오</title>
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAYAAAA9zQYyAAAfRklEQVR4nO2deZxcVZn3v8+5t9au7k7S3XQIhkUBIWBAFpFBWUYUQQQGXhkBdRjF5SOiIgyu837GmUGRZTZB8RVRUZkZnbiigIwfFMYVdSCyKIuSkK2TdNJLLV1V957n/ePc6u6ETtLd6U53Vc63P5cmt27fOnXrd5/7nOc85znCnsEkWzR+Z6FQ6KnX60eExhyhqssUe4hg9lO0R0QKQG4Ptc8zNSqqWhRkk2LXCuYpEXk8svaxVCr1WLFY3LTd8SFgk21WkVk+fwAoYx8kzOVyR4vqq1U4GdWjRGRfEdcMVZ3l5nhmg/Hfn6quR+QRUR5QkfsqlcrDjBkyg9NcPGttmaXzBjgRK0ChkF4Wx3KhIBcAR7oLoIzT7/g7V7b77Zmf6Ha/wQkWp29pGKhHFV0RBPr1YrH2eHKcJMfOuLBnWjQG9wEVIJ9Pn4k170Q4Q4TsOAHH4473wm0txj+RA3ACV2UE5V6M/Vy5XLs7eV2SbcZckZkS0zZ3XD6ffh1qrhY4FRm9U+Nxx3n2HhpP6kASZSv8GLE3lsu17yfHbPNE3x1mQtCG5A5ra0sttza41oicnTS80UhviT0Nyy0CBhGs6l3GxB8tleork2NGtTRddldkIc7hz+ZymQ8Jco2I5FR19K7czfN7WpMYEBExqlpR9PpKpXodMMKYpqbF7gg6AOJ8PnU01twqxpwwzrXwQvZMhpjEFVFrf4mx7yqX6w+TaGs6J5yOoEcd+Xw++xas3iwi7eruqmCa5/TsvSgQC4SqOoyR95TLI3ewXYBhskxVfKNvks9lbjQiVyWRC2+VPbtLYq3Bqt5UrlSvZhpRkKkIuuGwpwq5zJcQuVjVOflTPI/HsyMUUBEMqncWK9VLgTpT6CxOVoiNE7a35bNfE+X1iYsRTqPRHs+uiARCFb5XKo9cAgwzSVFPRtANCxy25bIrxHC2KnUgtVtN9nh2Tl2ElFruKlVGLsAZ0F361Lsa5GgMhNhCLvMlL2bPHiSlSl0MZxdymS/hrPMuxzN2JegkNJe5EWMuUiXCi9mz50ipEmHMRfl85kYmEXzYmdoTMWffbIQ7EjF7n9kzF0QihFZ5S7k88hV2EqfekaANYNvaUkeiwc+BPD6a4Zk7Gr5zGYlPLJXqj7KDTuJELkdDuFk0+KIIheRkXsyeuUJw4bwCGnwRyLIDAzuRoA0Qt+UyHzIix6FEAkHjr/3mtznaApTIiBzXlst8COdyPE+/st2/E1ej7UjR+CEgPe6cHs9c03A9airB8aVS6Xmux4RRDrHx9eLMunc1PPMJAVQgKza+fqIDxgs6AGw+n3mtGM5Un5/hmZ8ECrEYzsznM6/FWedRnTYELSSJ+AF8bA4a6fFMmUSrjYQ5gTFBG5x1Ph0xJyVJR946e+YrgSoWMSfl85nTGRtFHB0oUQARuSLxmH09Ac98RxEQ5ArghzQ0TCNXo5A+HDX/i4tsNF7zeOYrDaNbQ+xLi8XaE4BpVDRCVS4WIcPY7GyPZz4jQCxCRlUuTvaZRow51Z7PPoxwOOP8EY9nnuO0qjwxXB45GqgbQDs6cstFeDFjJQc8nmbA4IbEX9zRkVsOqAGwkb4GkVkpzeTxzDIxIsZG+hoYq0V28rhOosfTTAhoomEwhQLdoMuT2dve3fA0G8ZpV5cXCnQb1cxLQHrxeRue5iQZ5ZZe1cxLTIBZJjI6fOjxNCMqggkwy4wSH9HYOadN8nimj3M6iI8IUQ5Odnp3w9OsSJIpfXAoYvZzY+Je0J6mRdx/zH4G0e7xOz2eJsRpV7TboNI+x43xeGYGlXaD+KXTPC2CkPMDKZ6Wwgva01J4QXtaCi9oT0vhBe1pKULx4WdPC+EttKel8IL2tBSh9zg8rYS30J6Wwgva01J4QXtaCi9oT0vhBe1pKUIf5PC0EnvVuoNBIKCKzvR0YAEjQmxn4dyeKbHXCFoEtg7GGAPhDD+XrFVqdaWzEGAMXtRzyF4j6ErV8tfndfCGV7XTngtQ1d0eU1JARKhHyg8fKnHrNwao1ZV0KFgv6jlBFrTnWvrSGyMMlWJuurKH917WBSPqirDOpJFWoM3wo/8e5oJr1iIio4vWePYsLS3owMBwxfLyI3L85PalxGXn44qAzoAvLeIsNEAcKenekMv/dj2f/a9BujoDorhlL+28paVzOcQItbrysiOyaMqgGhEGyQfOBLu/LJIClWTNxwBsTTnxqByfXTGI+uVK54S9w4fevoqOwON/GGGgaAmmGYlXhVQoHHVIhjC5MYz4wP5c09KCFnGryMg4NauCBMJvn6ryx3V1MmlB7Y7PMfGJwcZKW95w+AvThIGM+ssiztUJ5mH5S8V9/laOwrTkwEpgAIE4BhtbqjUdNdEiQKy86dxO9+l358tVhZJ1xVxx71mLlCiyDJdk3vjQo6uqipBOQSaV+P1TvZGbgJay0JIMcAyVYmIL++0TctAL8vQuCqCmmHGm2hYtOgOmKmj45ALEkEsbTjkmT1s+IJ5HsTsDDI8oz22os3ZjhAAdBdNyFlsWdrRGlMMYZ5GLZctpL8vz1vM6OWV5jt6u0K31VdfZ76QprqOZmo/PPUEjZfNAzM8erXD7dwe556clsmkhnZKWsdYtIWhjoFZXwkC4/soeLvuLBc4kVdUJGfZoxGG+WjwB52Zlnav1n/cOceX1GxkqWXKZ1hB10wtaEl85COAbNyzhz08uYPsjJyqRGRkRnCrzdW2Pxshmo98QLAr47cMVznn/GoaKlnSq+Uc4m17QxsBQyfLVv9+XC8/rpL4pIpUSrAWTEsjPw3DDnkJkrEeoyW1WscRVJQigXldS3SE/+nGRcz6wlmxG5u3TZbI0dacwMDAwbPk/rypw4dmdRJvHiblg6NsQseKbA/xpXZ29bSzaGCfOas0ShkIYwL5dIeef1s7+S1PYoiWVFur9Ea86tcCl53Ry6ze20rUgnDfRmenQ1BbaCJRGlPtufgEnHZ/HliyCE/MPHijyzn/sY01fhNnN6FxToYoxkkRYlH33STE4ZCmPxIgYuhcG/Nvf7MMbz+rAFp3TLFnh8adrvOKy1dvE7JuRphW0EahUlUMPSPOL2/cnE4CNwWSEP66tc8JfraJUUdrbTNM/RqeCGBipWg5YkuaWD/Vy/GEZtpQtN9zez23fGsQEQhQp/3Pb/rx0WYa4oi4KlBZOe9dz/GJlhULeYJu0gxg26x1pAjeIcfgL02QKBlu0WFVMNuAL3x6kfzCmtyukVp8bNbvEpcaAS3KRVWd/tC4R4uc/0ssJL8/DlpglCwL++cOLeeq5Gj/5TYV6pHx2xVb+31H7QlmxqgTZgKMOzvDgb8sERmYkRj8XNK0PLQjWKt0LAgjcF2BEIFIee7ZGKhTiPegLNobZwb1vtabUIyW2jFo7Iy4aE4ZCOpTRiQZ2hma6GAPlivKSQ9Icd1iGeHOEBEJctpiM8LpXFLjnZ2XyWeH3q+owogQGoqR9vQuDpnfNmlbQo0z0DezBb8XlbrisvqGixaobgTtovxRL9gnpWRDS0ebyo4cryqatMes2Razpq7N1MAagLSdk0gZrdbfCZqruhhkYtlTrSjYlxHXFWiWVEjZuiUePE3jedWpSo7wNzS/oOUJww96VqqVYjtm3J+SsV7Zz+gltvOzwDC/cN0Uub9yooUlcDqsQKSNl5dm+Or/5wwj3/bLM/b8qs6avTi5raMuaac9NVIVs2vDHtXX+5T8G+Mh7ezAjFjLCU09U+fJdg7S3GZfb0qJ4QU+DwLjEnk1bIw49MM3bzl3AG17dzoFLU07pdYWaolVFR3ScPyoYA9kQDjswzWGHZrjk9Z2sWxex4v5hvvCtAX73ZJXO9oAwdANGUyW2SnvecO3tm3nyuRqvPTHPqr6Iz68YZOOWmLacMFL1gvYkhIEwXLZk0sL/fUc3V1y0kK6eEMoWO2RRFB0X9BbGZrWoOp8aC0SKVNzrSxYFXPHmRfz12Z3cumKAG7+8hYFiTGdh+rNechnDnT8Y4qvfH0QVCnlDLtP8I4G7wgt6CoSB0D8Yc9yyDLd8eDHHHp2D4ZhoS4QJxElZhCAjkDYQiHMzGpY2wLkfdsyCx9blm9itEYVQuPqyLs5+ZRuXX9fHj39dpmtBOK3OrSos6DA0CtrHiX9umjSqNVm8oCdJGAibB2LedFYHt3ykl0LeEPVHBIEgRpxQOgOIYNWaGg89UeXxZ6qs7quzddiFEToKhqU9IctelOH4w7K86IAUYSqAUoxaN7IXb4k47MA093xmKVfftJGbvz5AV8f0UlGdy9LiJnk7vKAnQRgIm7ZGvOuCBXzmbxfDiCUuWoJQsLESdATUy8p37hnmqz8Y5Fe/G2HzQExkXSjRGOdaWOssZRgICzsCjj08wyVndnD+qe3kOg12KCYIBFtRQgP/+tHFFPKGT35xC90LzLR86r2Npp2xIuO26bw+WZybEfH28zr5zN8udjFdZVSkQWfAvQ+W+PjnNvPQoyMEBvI5w8J2g0gyNavRKRxX3iCKlPsfKvPDn5e46dCtfPSyLi54TTtULBq5g+LBmGs/0EMcKzfesZXuhQFRtHsWd7LXrFl14ed07oQgEAaKMacc28YtH1mMVpyYVUFSQj0Urr5hI+e+bw2P/L5KV2dAZ8EQiIuCRLESx64jGFuIYx3dZwQ62gzdC0KeWlXjjdes4+1/t4FiMnyvib8bD1quu3Ifzv/zAlsG47FZ654J8YLeASIuvbKrM+DzH+slDEBjBQWTFgYrlguuWstNd2yhs2Ao5N0cwthOzmtVxkSfywpdCwK+8M0BXveeNazbGmOyTtSioFXl5g/1cuCSFJWqbfmO3e5gnvecacZte2bgnEEgDJVjPv7Obg56UYa4ZJ0LEcBIDH/5wbXc9WCJfXtCYoVYp/9eViGySm9PyM8eqXD+lWvZWrRIyt1YtmbZZ3HI9Vf0UKkpYubvdZvrzVvoCXCTBmJOOjrPped2Eg/GmKRenckb3n9DH/f+oszirmBGk5/qdaVnUcBDT1R45z9sgJTBAiYQ4kHLea9u56xXtDFYtATeTE+IF/QEiAhRDFdetJAw60yojSHoCPj37w5y27cHXSbfbnbQJqJWV/ZZGPKNHw1z89e2EHQEaDw2jezqixcSBM0/s2S28ILeDiNQqliWH5LhzBPb0KJ1ceY09G+q83e39dOWc+G62SKKlYXtAdfdsYXVz1aRrAup2LLlz16a58TlWYrlOMnu84zHX5LtMMYlHJ1/WjuZzgAbK2oVaQv44ncGeWp1jXzWzOoQsipk0sKG/ohbvj6AZA1qXTtMVrjw9HZqEdvUGfE4vKC3I7ZKIWc44+V5tG5BBBMK5a0xd947TFvO7JE86yh2SUYr7i/Sv6FOkBbXQxxRTj++je4FAfVoz89on+8YoZl/zIRfqOvwTv0nEKFag4OWpDniwAxSdUFnyRl+sbLC7/9UI58xqE7+nC6BI0QJgSBp8yT+ToVsOmD1+ogfPVSGnHElgGvKQUtSvPiANNWqe6JM92ciZvb72fM/3kKPQwxUa8qyg9JkOww2TmLKgfCT/3VTlyb7mFcES4Bikuw7QTHJvsnaVfck+MlvKzSkFlt3gx11SIbqFNqzt+AFPQ7BTZ86dP80BOLmKIpAXXn4yaqrMjqp8IKgBEwc7AWdpKgbJXsffbqKLVtMo561KAfvn97b8o4mhRf0dogIvd0hDbWYAGply7pNEWE4uXCZTuqy7voYJ2jYsCVioBgjDUErLOlOFiiaxDvtTXhBj0NxgyqLOsYpxQjDFctQMXbD35M6zySs72TcDnXJUcWyMlyy46ZyQVd74NrjA9Lb4AU9AdtX9Y91bGb0zDI5/ze2rubIeHyO0sQ07xorO8pHmCinYgrnVGBk/HC2KpmUkE0nqaCTOJ+oTs4Cyy6sq4DGkE5BKiNjjweBkUhdCY5pfMad/s10rts8wlvocQjOb924NR77Qi205wyLOgOimEmWytq1GyBMzuRHVlnQbljQZhgdzRHoG4iJY0bnK3ocXtDbI8q6vgi3jJWbxmRywkH7pdxAxmQMr1hkp6JWRHYtaCMuYWn/xSkK7QHacDtEWNMXYeegVPB8x8yDjL/d2iZi2udSJR0Ynni2BjWX0aa4TPsTlmWxVmlMO93VZiRGJnApRJRA7CTP4VapPe7wLKRdpSgjArHyxB+rhEZgNMo9+a2RfTpT120+bd5Cj8MqZNPw+2drbO6PkVDcI71mOe3Y/JTLChhiAokxYjFi3f8TM9lgm1UlmxZefXweorEw4shQzMqna86vb9KiirOFF/Q4VCGdMqzfFPHQEyNo1tkxW7Ecfmiak47KUSxPdW1DN2bofOYp3AwGShXlpS/OcsLyHFp2eSWaNax8psafkiXpWr3OxlTxgt4OERcm+84DRVc9VNXlbgTC28/txCp7pCMWiDBSs7z1nE7CNlf3DlUkFL77YInKiPok/wnwgt6O2CqFvOHun5ZZ/1wdyRjEgB22nHVqG2ec2MbWoXh09djZIAhgsBRz4ktyXHxWOzocu5zsUBjeHPGt+4dpy8m8WjZuvuAFvR2qbmHK9Zsj7rh7CMkbNzlWwChcd0U3He2GWp1ZSbAXcfU7ggCuf28P6YyM5kJLIeDrPxrm6dU1spm9q5D7ZPGCnoDYusr/n/2vQdatrmGy7jLFFcvhh2X416v2YbicLOcwg0/9Rmne/sGYT1zew8uPzxEnM2YkJQxtjviXO7eSyyUuiOd5eEFPgLPSsH5zxMc/34/kXMgsCIRoIOaN53Twifd00z8Qu5rMM3AVG2uS9/VHXPNXi7j8koXEg5YgEOJIMYWAT92xhd+vauRk7/57tiJe0Dsgil2S0h3fH2LF94cIF4ZEkSvjFQ/GXPXWRdzy4V6qNaVUUVKhTMtai7gU0ZGqK5j+iff28In39bhSYwbiSAk7A+5/sMin/3MrXR3Tr0i6N9C0a6yMrmEyQfvHv7Y7n0+Btpzhff+0iWUHZzj84AzxUEwQurIC73jjQg47KM0HbtrIyieroyVrVV1Me0dW1K1J7qIl1ZqydSjikAPS3PD+Hs46rR07GDsxxxC0GZ5bV+ddn+wjMDK2bss02Wbtl+e9ODPXbS7xFnonuLi0MFyyXPjB9TyzpkbQ7urLBQHEAxEnH5vnx59fyrWXd7O4K6R/0DIwbEfrdQTGFa0JAiFI6uHVI2WwaOkfiFnQYfjo27p48Av7c9YpBeIBN5s7ipUgL/RtjfnLa9axblNEbpYn57YCvvroLohjpZATnl1X5y/et44V/7SEQw7KEA1ErvpoyVIIhL95exfvOG8B3/ufIj/4aYlHnqzStyWiVIEoWUQ7MJDNCD0LQ15ycJozTmzj3JML9OwbQkmJh9yslChSwo6AdRsj3nDVOh5+ssrCdu9qTAYv6EkQxa6w4qr1Nc66fA23fqyXV72yAIMxVhW1gh2I6cwLbzqvkzed08nglphV6+us7Y8YSupDF9qEJd0pDlwcsrArdLVfyzaxyu4ZLwphV8gvf1PmHX/fxzNraixsN17Mk8QLepJEsdKWM/QPxlxw1TqufPNCPviWRWQ7A0gEayPQwRgRoTMvLD8sw/IgO+bYKa6af12xJYuqjo06KgTthqim/Nvt/Xzytn7qEXTsxrIUeyNNL+iJOi+qs9Opia0rAKMKn7htC3c/WOKaSxdx7skFgryBimJrblpUVMctHrQTjAgmJZAzUFPuebDEdV/q5+ePjLCg3ZDLMjs1QGTirJJm7QiOp2kFrSjG4JZ7iJ2lU1VICS9akqIeMW7N65mjsYhm94KAJ56t8eaPrue4I7NcdGYHZ/1ZG/vvG0LKOEscJ+urjJtpgsG5GgEQwYa+OvfeU+Zrdw/x80cqiLhzx1ZnZXniQIR6BAcsDiErxMNjOdX9w3a3IijzgeYVtIV0KDz5bI2oYgkNxNaler7l7A5u+84gI1Ulm3GDIjNtflRdZSMRWPlklV8/tpHru0OOOSzL8UdmOObgDPstTtHVbmhLu4I45brSPxyzbmPEI89U+dWjI/zmiRHW9bkZ5Z3tbhautTrqU89ggzHG5VcDvO3cztFllI0RqFoee8atwNvME29ln0X5pm29iKvW+d+3vICXHpmkWAKmYPjKdwd5/40bGS679Upm80MacSN9tbom4To3sTGTFtpyhmzaTQoYqbtBmJGqHT0mFcqoGxPPYm6ziItrZ9LCte/u5opLFmJL1sWe08Kf1tR5xWWrpzDNbH7StGusgJv5XBlRbvvOIJ85Jk9cVMKUYIuWN5/TybGHZbnzniFWb4gwMvtL/44NmDAq0MZyapCs9W3cIkKN9uxsAGYmUYXF3QFvPKOdY47MYYvWxbsjJcwHfPGuIbYMWroXNHcnVHqb2EKDG20bqVq+ecMSTju5QL0/IpUSrAWTFciYpLz+XDRuB/vn6ooHQE2xFR0Tc2fAw78b4Ywr1gDOxW9mQTS9oI1Ata4s7Aj49j/vx5HLMkRbXFx3dAWqZn6GzhBCUpQmWYnLWiVcELDquTrnvG8Nq9dH5LIyKx3RPYn0djW3oMGNwJVH3AI/n/5wL2eeUnAhs6p1BRebuJMzk0iyZiIZ9+R68Fcl3n1tH6vXRxTa9kyZ4NmmJQQNTtQjdSWO4PzT27nsnA6OOTRLtmB8xkoDC9WyZeUfq3z5riH+4+4hrEIuKy2zqGfLCBqSjhYwWLRkUsILl6Y4ZGmahW0uqWdvdTwUd22GKpan19R5enWN8ojSWTAYQ9O7GeNpKUE3CAIXpx6pKdWa+gy1BCMuezCbETfo1AIuxvY07cDKzmg8PjNpIZdp4uTemUZ1NFTYimKGFhV0A20siNnUgSjPVGjqgRWPZ3t8/9/TUnhBe1oKL2hPS+EF7WkpvKA9LUXzrrHi8UyAt9CelsIL2tNShDtaxNzjaUa8hfa0FF7QnpbCC9rTUnhBe1oKL2hPS2FUtTLXjfB4ZgJVrRgRhue6IR7PTCDCsAHZnMxQ8tM6PM2KOg3L5lDQtSKyjEaxNY+n+VARBNW1RpCnk9FCb6E9zYoKgiBPhyo8luz01tnTrIgCKjxmxPK4qlq8oD3Ni6iqFcvjxqbld0BfsnSddzs8zYYm2u2zafmdWb++uBllZbJ4TQsVhfLsJVgRAWXl+vXFzQZA0QfwoTtPc6JuESR9AJKhbw3DHyZ+dDCnTfN4pk6gqlbD8IfgBC2LNgytVNU/NGphz237PJ5JY0UQVf3Dog1DKwEJgeBxqO2HrDDIxyxq8UlLnubAGsRYWPE41IDQkFjkOJY7rWoV53Z4X9oz31EgsKrVOJY7k322IWizYUvxCeA+48Id3u3wzHdsotX7Eu0awDbK6QqAQT+NcDZ+kMUz/xFEMaqfHv03Y8KVxv/vt0/+ARFzkqrG+KiHZ34Si0igan+6dmP55GSfAmrG/UMAGyv/OCdN9HimSKLVRtqGwrbRjBgwGzaV77GqdxuRINnn8cwnYiMSWNW7N2wq34PT8KhOJwzPGeEaqzqCz+/wzC8UEKs6YoRrJjpge0FbIFjTV3oU5VPGyDbq93jmmNgYMSifWtNXehTXx9smIjdRNEMAc8ABpOJK24MicpzvIHrmAUlHUH8d5EqvXLWKOk7M23gQOwrPGcC+oLftSIGfq5JnXCTE49nDuPx9oaxwYmKdRwcFx7OjIe5R10Osvtu7Hp45JjZGjFh9945cjQY7y9mIgXD1pvJXNLY3BUZCIJqFxno8OyMKjIQa25tWbyp/Bbe25g6N665cCCEJiyztLdwpcJFVrQOpmWuvx7ND6kYkpfDvz/UVL2bMMu8w8rarrDpNTmDa+4qXWtW7jJEUUJ+xJns8E1M3RlJW9a72vuKljPnMOw0jT7aTZwDb1UV7Lmj7mgnk9dZqRIsvreyZMyJjJLSxfq8Sly7p72eYHXQCt2eyec8WMP39DPduLF2gljuN86l3ecd4PFNAAWuMhGq5s3dj6YKpiBmmHoYzyZvq0t78jWLMVWoVdU66j1N7dodYIBAjqLU3PddXvpqxUPGk05mnE1cefZOli/NvEeRmQdqtaoQTtY9Ve6aC4vIzQkWHFX3PcxvKdzDOeE7lZLsjvgCID+jJH62B3CoiJ1ir4K21Z/LEQGCMoKq/lFjftWpT+WESbU3nhLszdzAGwlWbyg9LpnSqtfpxgYox0git+IEYz46Icb5yIFCxVj8umdKpiZh3GmfeFTPhHow67Aft07Y8MlxrkLMVSEojaHKMd0X2bhohYBER4xxjvSu0fPRPG0srk2Mm3fnbETMlstEBGID9e/OvQ8zVAqcCWHUdRxk7zrP3YNWV6wrMWCHyH6P2xtV95e8nx+xywGSyzLTV3MaRP2Bx/kxVeafCGcZIVlVR1+R43PHecrcWDUsMEIiAiGCtjgjcK6KfW7WhfHfy+pSjGLtitsS0zR23/+LCMlW9UEQvAHOkJNMGlFGBj/9Ast1vz/xEt/sNYERAcM9i993aR1VlhYh8ffWG4uPJcds80WeS2RZNo8aHE+wphEv/0HE0Gr1akJMVjhLYV0YfRe7aqB+qaQqSr43G8trqXMv1Ao+4eonhfc+9eOhhfjKa1NZ4Is9awGBPWUGTbNtk6y1eXOgJVI8I4AjQZRYOEWQ/0B6UAiK5PdQ+z1RQrSAUQTYputbAUyCPx/BYLPLYhg3FTdv9RWNUedbrvfx/XX8L0r5leNEAAAAASUVORK5CYII=">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Frame & Print">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#1B1A18">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&family=Fraunces:wght@400;600&display=swap');
+
+:root{
+  --ink:#1B1A18;
+  --panel:#242220;
+  --panel-raised:#2C2A27;
+  --paper:#F3EFE7;
+  --rule:#3A3733;
+  --muted:#948A7D;
+  --accent:#E7A13A;
+  --accent-dim:#B97E2A;
+  --danger:#C1653D;
+}
+
+*{box-sizing:border-box;}
+
+html,body{
+  margin:0;
+  padding:0;
+  background:var(--ink);
+  color:var(--paper);
+  font-family:'Inter',sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+
+.app{
+  max-width:1180px;
+  margin:0 auto;
+  padding:36px 24px 64px;
+}
+
+.masthead{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-bottom:28px;
+  border-bottom:1px solid var(--rule);
+  padding-bottom:20px;
+}
+
+.masthead h1{
+  font-size:26px;
+  font-weight:700;
+  letter-spacing:-0.02em;
+  margin:0;
+}
+
+.masthead .tag{
+  font-family:'IBM Plex Mono',monospace;
+  font-size:11px;
+  letter-spacing:0.12em;
+  text-transform:uppercase;
+  color:var(--accent);
+  border:1px solid var(--accent-dim);
+  padding:4px 10px;
+  border-radius:100px;
+}
+
+.subtitle{
+  color:var(--muted);
+  font-size:14.5px;
+  margin-top:6px;
+  max-width:560px;
+}
+
+.workspace{
+  display:grid;
+  grid-template-columns:1.3fr 1fr;
+  gap:28px;
+  align-items:start;
+}
+
+@media (max-width:840px){
+  .workspace{grid-template-columns:1fr;}
+}
+
+.stage{
+  background:var(--panel);
+  border:1px solid var(--rule);
+  border-radius:14px;
+  padding:22px;
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+  position:sticky;
+  top:20px;
+}
+
+@media (max-width:840px){
+  .stage{position:static;}
+}
+
+.stage-label{
+  font-family:'IBM Plex Mono',monospace;
+  font-size:11px;
+  letter-spacing:0.1em;
+  text-transform:uppercase;
+  color:var(--muted);
+  display:flex;
+  justify-content:space-between;
+}
+
+.canvas-shell{
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:
+    linear-gradient(45deg, #2c2a27 25%, transparent 25%),
+    linear-gradient(-45deg, #2c2a27 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #2c2a27 75%),
+    linear-gradient(-45deg, transparent 75%, #2c2a27 75%);
+  background-size:16px 16px;
+  background-position:0 0, 0 8px, 8px -8px, -8px 0px;
+  background-color:#211f1d;
+  border-radius:8px;
+  min-height:340px;
+  overflow:hidden;
+}
+
+#previewCanvas{
+  max-width:100%;
+  max-height:560px;
+  display:block;
+  box-shadow:0 18px 40px -12px rgba(0,0,0,0.6);
+  cursor:grab;
+  touch-action:none;
+}
+#previewCanvas.dragging{cursor:grabbing;}
+#previewCanvas.picking{cursor:crosshair;}
+#previewCanvas.hidden{display:none;}
+
+.selection-outline{
+  position:absolute;
+  border:1.5px dashed var(--accent);
+  border-radius:3px;
+  pointer-events:none;
+  display:none;
+}
+
+.pick-hint{
+  position:absolute;
+  top:10px;
+  left:50%;
+  transform:translateX(-50%);
+  background:rgba(27,26,24,0.92);
+  color:var(--accent);
+  font-family:'IBM Plex Mono',monospace;
+  font-size:11.5px;
+  letter-spacing:0.03em;
+  padding:7px 14px;
+  border-radius:100px;
+  border:1px solid var(--accent-dim);
+  display:none;
+  z-index:5;
+  white-space:nowrap;
+}
+
+.dropzone{
+  width:100%;
+  min-height:340px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  border:1.5px dashed var(--rule);
+  border-radius:8px;
+  color:var(--muted);
+  font-size:13.5px;
+  text-align:center;
+  cursor:pointer;
+  padding:20px;
+  transition:border-color .15s, color .15s;
+}
+.dropzone:hover, .dropzone.hover{
+  border-color:var(--accent-dim);
+  color:var(--paper);
+}
+.dropzone svg{opacity:0.7;}
+.dropzone .hint{font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.04em; color:var(--accent);}
+
+.hint-row{
+  font-size:12px;
+  color:var(--muted);
+  text-align:center;
+}
+
+.panel{
+  display:flex;
+  flex-direction:column;
+  gap:22px;
+}
+
+.control-group{
+  background:var(--panel);
+  border:1px solid var(--rule);
+  border-radius:14px;
+  padding:18px 20px;
+}
+
+.control-group h3{
+  font-family:'IBM Plex Mono',monospace;
+  font-size:11px;
+  letter-spacing:0.1em;
+  text-transform:uppercase;
+  color:var(--muted);
+  margin:0 0 14px;
+  font-weight:500;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.shape-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:8px;
+  margin-bottom:4px;
+}
+
+.shape-btn{
+  background:var(--panel-raised);
+  border:1px solid var(--rule);
+  color:var(--paper);
+  border-radius:8px;
+  padding:10px 6px;
+  font-size:12px;
+  font-family:'Inter',sans-serif;
+  cursor:pointer;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:6px;
+  transition:border-color .12s, background .12s;
+}
+.shape-btn .swatch-shape{
+  border:1.5px solid var(--muted);
+  background:transparent;
+}
+.shape-btn:hover{border-color:var(--accent-dim);}
+.shape-btn.active{
+  border-color:var(--accent);
+  background:rgba(231,161,58,0.1);
+  color:var(--accent);
+}
+.shape-btn.active .swatch-shape{border-color:var(--accent);}
+
+.bg-type-grid{grid-template-columns:repeat(4,1fr); margin-bottom:16px;}
+.pattern-type-grid{grid-template-columns:repeat(2,1fr); margin-bottom:14px;}
+.align-grid{grid-template-columns:repeat(3,1fr); margin-bottom:0;}
+
+.bg-section{display:none;}
+.bg-section.active{display:block;}
+
+.swatches{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-bottom:14px;
+}
+
+.swatch{
+  width:34px;
+  height:34px;
+  border-radius:8px;
+  border:2px solid transparent;
+  cursor:pointer;
+  position:relative;
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,0.08);
+}
+.swatch.active{border-color:var(--accent);}
+
+.color-field{margin-bottom:14px;}
+.color-field:last-child{margin-bottom:0;}
+.color-field label{
+  display:block;
+  font-size:11px;
+  color:var(--muted);
+  margin-bottom:8px;
+  font-family:'IBM Plex Mono',monospace;
+  letter-spacing:0.03em;
+}
+.color-field-row{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+.color-field-row input[type=color]{
+  width:38px;
+  height:38px;
+  border:none;
+  border-radius:8px;
+  background:none;
+  padding:0;
+  cursor:pointer;
+  flex:none;
+}
+.hex-mini{
+  font-family:'IBM Plex Mono',monospace;
+  font-size:12px;
+  color:var(--muted);
+  background:var(--panel-raised);
+  border:1px solid var(--rule);
+  border-radius:6px;
+  padding:8px 10px;
+  flex:1;
+}
+.eyedrop-btn{
+  width:38px;
+  height:38px;
+  flex:none;
+  border-radius:8px;
+  border:1px solid var(--rule);
+  background:var(--panel-raised);
+  color:var(--paper);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+  transition:border-color .12s, color .12s;
+}
+.eyedrop-btn:hover{border-color:var(--accent); color:var(--accent);}
+
+.slider-row{margin-bottom:14px;}
+.slider-row:last-child{margin-bottom:0;}
+.slider-row label{
+  display:flex;
+  justify-content:space-between;
+  font-size:13px;
+  color:var(--paper);
+  margin-bottom:8px;
+}
+.slider-row .val{
+  font-family:'IBM Plex Mono',monospace;
+  color:var(--accent);
+  font-size:12px;
+}
+input[type=range]{
+  width:100%;
+  -webkit-appearance:none;
+  height:4px;
+  background:var(--rule);
+  border-radius:4px;
+  outline:none;
+}
+input[type=range]::-webkit-slider-thumb{
+  -webkit-appearance:none;
+  width:16px;
+  height:16px;
+  border-radius:50%;
+  background:var(--accent);
+  cursor:pointer;
+  border:2px solid var(--ink);
+}
+input[type=range]::-moz-range-thumb{
+  width:16px;
+  height:16px;
+  border-radius:50%;
+  background:var(--accent);
+  cursor:pointer;
+  border:2px solid var(--ink);
+}
+
+.actions{
+  display:flex;
+  gap:10px;
+}
+
+.btn{
+  flex:1;
+  padding:13px 14px;
+  border-radius:9px;
+  font-size:13.5px;
+  font-weight:600;
+  font-family:'Inter',sans-serif;
+  cursor:pointer;
+  border:1px solid var(--rule);
+  transition:transform .08s, opacity .12s;
+}
+.btn:active{transform:scale(0.98);}
+.btn.secondary{
+  background:var(--panel-raised);
+  color:var(--paper);
+}
+.btn.secondary:hover{border-color:var(--muted);}
+.btn.primary{
+  background:var(--accent);
+  color:var(--ink);
+  border-color:var(--accent);
+}
+.btn.primary:hover{background:#f0ad4f;}
+.btn:disabled{opacity:0.4; cursor:not-allowed;}
+.btn.small{
+  flex:none;
+  padding:8px 12px;
+  font-size:12px;
+}
+.btn.full{width:100%;}
+.btn.danger-outline{
+  background:transparent;
+  color:var(--danger);
+  border-color:var(--danger);
+}
+
+.file-input{display:none;}
+
+/* --- align buttons --- */
+.align-btn{
+  background:var(--panel-raised);
+  border:1px solid var(--rule);
+  color:var(--paper);
+  border-radius:8px;
+  padding:10px 6px;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  transition:border-color .12s, background .12s, color .12s;
+}
+.align-btn:hover{border-color:var(--accent-dim);}
+.align-btn.active{
+  border-color:var(--accent);
+  background:rgba(231,161,58,0.1);
+  color:var(--accent);
+}
+
+/* --- camera info --- */
+.camera-status{
+  font-size:13px;
+  color:var(--muted);
+  margin-bottom:12px;
+}
+.camera-fields{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+.camera-field-row{
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+.camera-field-row input[type=checkbox]{
+  flex:none;
+  width:16px;
+  height:16px;
+  accent-color:var(--accent);
+  cursor:pointer;
+}
+.camera-field-row label{
+  flex:none;
+  width:52px;
+  font-size:12.5px;
+  color:var(--paper);
+  cursor:pointer;
+}
+.camera-field-row input[type=text]{
+  flex:1;
+  min-width:0;
+  background:var(--panel-raised);
+  border:1px solid var(--rule);
+  border-radius:6px;
+  padding:8px 9px;
+  color:var(--paper);
+  font-size:12.5px;
+  font-family:'IBM Plex Mono',monospace;
+}
+.camera-field-row input[type=text]:focus{outline:1px solid var(--accent-dim);}
+.camera-field-row select.mini-select{
+  flex:none;
+  width:auto;
+  max-width:96px;
+  background:var(--panel-raised);
+  border:1px solid var(--rule);
+  border-radius:6px;
+  padding:8px 4px;
+  color:var(--paper);
+  font-size:10.5px;
+  font-family:'Inter',sans-serif;
+}
+
+/* --- text tool --- */
+.text-empty{
+  font-size:13px;
+  color:var(--muted);
+}
+.layer-list{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+  margin-bottom:14px;
+}
+.layer-chip{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:8px;
+  background:var(--panel-raised);
+  border:1px solid var(--rule);
+  border-radius:7px;
+  padding:8px 10px;
+  cursor:pointer;
+  font-size:12.5px;
+}
+.layer-chip.active{border-color:var(--accent);}
+.layer-chip .txt{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  color:var(--paper);
+}
+.layer-chip .del{
+  color:var(--muted);
+  font-size:14px;
+  line-height:1;
+  padding:2px 4px;
+}
+.layer-chip .del:hover{color:var(--danger);}
+
+.text-edit textarea{
+  width:100%;
+  min-height:60px;
+  resize:vertical;
+  background:var(--panel-raised);
+  border:1px solid var(--rule);
+  border-radius:7px;
+  padding:9px 10px;
+  color:var(--paper);
+  font-family:'Inter',sans-serif;
+  font-size:13.5px;
+  margin-bottom:12px;
+}
+.text-edit textarea:focus{outline:1px solid var(--accent-dim);}
+
+.field-row{
+  display:flex;
+  gap:10px;
+  margin-bottom:12px;
+}
+.field-row > div{flex:1;}
+.field-row label{
+  display:block;
+  font-size:11px;
+  color:var(--muted);
+  margin-bottom:6px;
+  font-family:'IBM Plex Mono',monospace;
+  letter-spacing:0.03em;
+}
+select{
+  width:100%;
+  background:var(--panel-raised);
+  border:1px solid var(--rule);
+  border-radius:7px;
+  padding:9px 8px;
+  color:var(--paper);
+  font-size:12.5px;
+  font-family:'Inter',sans-serif;
+}
+.bold-toggle{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:1px solid var(--rule);
+  border-radius:7px;
+  background:var(--panel-raised);
+  color:var(--paper);
+  font-weight:700;
+  cursor:pointer;
+  height:38px;
+}
+.bold-toggle.active{border-color:var(--accent); color:var(--accent);}
+
+/* --- crop modal --- */
+.crop-modal{
+  position:fixed;
+  inset:0;
+  background:rgba(10,9,8,0.86);
+  display:none;
+  align-items:center;
+  justify-content:center;
+  z-index:50;
+  padding:20px;
+}
+.crop-modal.open{display:flex;}
+.crop-dialog{
+  background:var(--panel);
+  border:1px solid var(--rule);
+  border-radius:14px;
+  padding:20px;
+  max-width:640px;
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+}
+.crop-dialog-head{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+}
+.crop-dialog-head h3{
+  margin:0;
+  font-size:15px;
+  font-weight:700;
+}
+.crop-dialog-head span{
+  font-size:12px;
+  color:var(--muted);
+}
+.crop-stage{
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#0e0d0c;
+  border-radius:8px;
+  overflow:hidden;
+}
+#cropImage{
+  display:block;
+  max-width:100%;
+  max-height:56vh;
+  user-select:none;
+  pointer-events:none;
+}
+.crop-rect{
+  position:absolute;
+  border:2px solid var(--accent);
+  box-shadow:0 0 0 2000px rgba(0,0,0,0.55);
+  cursor:move;
+  touch-action:none;
+}
+.crop-handle{
+  position:absolute;
+  width:16px;
+  height:16px;
+  background:var(--accent);
+  border:2px solid var(--ink);
+  border-radius:50%;
+  touch-action:none;
+}
+.crop-handle.nw{top:-9px;left:-9px;cursor:nwse-resize;}
+.crop-handle.ne{top:-9px;right:-9px;cursor:nesw-resize;}
+.crop-handle.sw{bottom:-9px;left:-9px;cursor:nesw-resize;}
+.crop-handle.se{bottom:-9px;right:-9px;cursor:nwse-resize;}
+.crop-footer{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:10px;
+}
+.result-stage{
+  background:
+    linear-gradient(45deg, #2c2a27 25%, transparent 25%),
+    linear-gradient(-45deg, #2c2a27 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #2c2a27 75%),
+    linear-gradient(-45deg, transparent 75%, #2c2a27 75%);
+  background-size:16px 16px;
+  background-position:0 0, 0 8px, 8px -8px, -8px 0px;
+  background-color:#211f1d;
+}
+#resultImage{
+  display:block;
+  max-width:100%;
+  max-height:56vh;
+  -webkit-touch-callout:default;
+}
+.result-hint{
+  font-size:12.5px;
+  color:var(--muted);
+  line-height:1.6;
+  text-align:center;
+  background:var(--panel-raised);
+  border:1px solid var(--rule);
+  border-radius:8px;
+  padding:10px 12px;
+}
+.result-hint b{color:var(--accent);}
+#resultDownloadLink{
+  text-decoration:none;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.crop-footer .crop-hint-text{
+  font-size:12px;
+  color:var(--muted);
+}
+.crop-footer .crop-buttons{
+  display:flex;
+  gap:10px;
+}
+</style>
+</head>
+<body>
+
+<div class="app">
+  <div class="masthead">
+    <div>
+      <h1>Frame &amp; Print</h1>
+      <div class="subtitle">사진을 자유롭게 크롭하고, 원하는 비율로 배치한 뒤 단색·그라데이션·패턴 배경과 텍스트를 더해보세요.</div>
+    </div>
+    <div class="tag">Photo Studio</div>
+  </div>
+
+  <div class="workspace">
+    <div class="stage">
+      <div class="stage-label">
+        <span>미리보기</span>
+        <span id="dimsLabel">—</span>
+      </div>
+      <div class="canvas-shell" id="canvasShell">
+        <div class="dropzone" id="dropzone">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 15l-5-5-4 4-2-2-5 5"/></svg>
+          <div>사진을 이곳에 끌어다 놓거나<br>클릭해서 선택하세요</div>
+          <div class="hint">JPG · PNG · WEBP</div>
+        </div>
+        <canvas id="previewCanvas" class="hidden"></canvas>
+        <div class="selection-outline" id="selectionOutline"></div>
+        <div class="pick-hint" id="pickHint">클릭한 지점의 색상을 추출합니다 (Esc로 취소)</div>
+      </div>
+      <div class="hint-row">사진이나 텍스트를 드래그해서 위치를 옮길 수 있어요</div>
+      <input type="file" id="fileInput" class="file-input" accept="image/*">
+    </div>
+
+    <div class="panel">
+      <div class="control-group">
+        <h3>캔버스 비율</h3>
+        <div class="shape-grid" id="shapeGrid">
+          <button class="shape-btn active" data-shape="square"><span class="swatch-shape" style="width:20px;height:20px;"></span>정사각형</button>
+          <button class="shape-btn" data-shape="portrait"><span class="swatch-shape" style="width:16px;height:20px;"></span>4:5</button>
+          <button class="shape-btn" data-shape="story"><span class="swatch-shape" style="width:12px;height:20px;"></span>9:16</button>
+          <button class="shape-btn" data-shape="landscape"><span class="swatch-shape" style="width:20px;height:12px;"></span>16:9</button>
+          <button class="shape-btn" data-shape="original"><span class="swatch-shape" style="width:18px;height:16px;"></span>원본 비율</button>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <h3>배경</h3>
+        <div class="shape-grid bg-type-grid" id="bgTypeGrid">
+          <button class="shape-btn active" data-bgtype="solid">단색</button>
+          <button class="shape-btn" data-bgtype="gradient-linear">그라데이션</button>
+          <button class="shape-btn" data-bgtype="gradient-radial">방사형</button>
+          <button class="shape-btn" data-bgtype="pattern">패턴</button>
+        </div>
+
+        <div class="bg-section active" id="bgSolidSection">
+          <div class="swatches" id="swatches"></div>
+          <div id="bgSolidColorField"></div>
+        </div>
+
+        <div class="bg-section" id="bgLinearSection">
+          <div id="bgLinearColor1Field"></div>
+          <div id="bgLinearColor2Field"></div>
+          <div class="slider-row">
+            <label>각도 <span class="val" id="angleVal">45°</span></label>
+            <input type="range" id="angleSlider" min="0" max="360" value="45">
+          </div>
+        </div>
+
+        <div class="bg-section" id="bgRadialSection">
+          <div id="bgRadialColor1Field"></div>
+          <div id="bgRadialColor2Field"></div>
+        </div>
+
+        <div class="bg-section" id="bgPatternSection">
+          <div class="shape-grid pattern-type-grid" id="patternTypeGrid">
+            <button class="shape-btn active" data-pattern="dots">도트</button>
+            <button class="shape-btn" data-pattern="stripes">스트라이프</button>
+          </div>
+          <div id="bgPatternColor1Field"></div>
+          <div id="bgPatternColor2Field"></div>
+          <div class="slider-row">
+            <label>패턴 크기 <span class="val" id="patternSizeVal">8%</span></label>
+            <input type="range" id="patternSizeSlider" min="2" max="20" value="8">
+          </div>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <h3>사진 조정</h3>
+        <div class="slider-row">
+          <label>확대 / 축소 <span class="val" id="zoomVal">100%</span></label>
+          <input type="range" id="zoomSlider" min="50" max="300" value="100">
+        </div>
+        <div class="slider-row">
+          <label>여백 <span class="val" id="paddingVal">8%</span></label>
+          <input type="range" id="paddingSlider" min="0" max="35" value="8">
+        </div>
+        <div class="slider-row">
+          <label>하단 여백 추가 <span class="val" id="bottomPadVal">0%</span></label>
+          <input type="range" id="bottomPadSlider" min="0" max="40" value="0">
+        </div>
+        <div class="actions" style="margin-top:16px;">
+          <button class="btn secondary" id="cropBtn" disabled>자유 크롭</button>
+          <button class="btn secondary" id="centerPhotoBtn">사진 가운데 정렬</button>
+        </div>
+        <div class="actions" style="margin-top:10px;">
+          <button class="btn primary" id="downloadBtn" disabled>PNG 다운로드</button>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <h3>카메라 정보</h3>
+        <div class="camera-status" id="cameraStatus">사진을 업로드하면 촬영 정보를 확인해요.</div>
+        <div class="camera-fields" id="cameraFields" style="display:none;">
+          <div class="camera-field-row">
+            <input type="checkbox" id="fieldCheck-model">
+            <label for="fieldCheck-model">기종</label>
+            <input type="text" id="fieldValue-model" placeholder="예: iPhone 15 Pro">
+          </div>
+          <div class="camera-field-row">
+            <input type="checkbox" id="fieldCheck-fNumber">
+            <label for="fieldCheck-fNumber">조리개</label>
+            <input type="text" id="fieldValue-fNumber" placeholder="예: f/1.8">
+          </div>
+          <div class="camera-field-row">
+            <input type="checkbox" id="fieldCheck-exposureTime">
+            <label for="fieldCheck-exposureTime">셔터</label>
+            <input type="text" id="fieldValue-exposureTime" placeholder="예: 1/125s">
+          </div>
+          <div class="camera-field-row">
+            <input type="checkbox" id="fieldCheck-iso">
+            <label for="fieldCheck-iso">ISO</label>
+            <input type="text" id="fieldValue-iso" placeholder="예: ISO 200">
+          </div>
+          <div class="camera-field-row">
+            <input type="checkbox" id="fieldCheck-focalLength">
+            <label for="fieldCheck-focalLength">초점거리</label>
+            <input type="text" id="fieldValue-focalLength" placeholder="예: 24mm">
+          </div>
+          <div class="camera-field-row">
+            <input type="checkbox" id="fieldCheck-date">
+            <label for="fieldCheck-date">날짜</label>
+            <input type="text" id="fieldValue-date" placeholder="예: 2024.01.15">
+            <select id="dateFormatSelect" class="mini-select">
+              <option value="dot">2024.01.15</option>
+              <option value="dash">2024-01-15</option>
+              <option value="short">24.01.15</option>
+              <option value="us">01/15/2024</option>
+            </select>
+          </div>
+          <div class="camera-field-row">
+            <input type="checkbox" id="fieldCheck-time">
+            <label for="fieldCheck-time">시간</label>
+            <input type="text" id="fieldValue-time" placeholder="예: 14:32">
+            <select id="timeFormatSelect" class="mini-select">
+              <option value="24h">24시간</option>
+              <option value="12h">12시간</option>
+            </select>
+          </div>
+        </div>
+        <button class="btn primary full" id="cameraStampBtn" style="margin-top:14px; display:none;">텍스트로 추가</button>
+      </div>
+
+      <div class="control-group">
+        <h3>텍스트</h3>
+        <button class="btn secondary full" id="addTextBtn" style="margin-bottom:14px;">+ 텍스트 추가</button>
+        <div class="text-empty" id="textEmpty">아직 추가된 텍스트가 없어요.</div>
+        <div class="layer-list" id="layerList"></div>
+        <div class="text-edit" id="textEdit" style="display:none;">
+          <textarea id="textContent" placeholder="텍스트를 입력하세요"></textarea>
+          <div class="field-row">
+            <div>
+              <label>글꼴</label>
+              <select id="textFont">
+                <option value="Inter">Inter (기본)</option>
+                <option value="IBM Plex Mono">IBM Plex Mono</option>
+                <option value="Fraunces">Fraunces (세리프)</option>
+              </select>
+            </div>
+            <div style="max-width:60px;">
+              <label>굵게</label>
+              <div class="bold-toggle" id="boldToggle">B</div>
+            </div>
+          </div>
+          <div class="slider-row">
+            <label>크기 <span class="val" id="textSizeVal">48px</span></label>
+            <input type="range" id="textSize" min="14" max="200" value="48">
+          </div>
+          <div id="textColorField"></div>
+
+          <div style="margin-top:14px;">
+            <label style="display:block; font-size:11px; color:var(--muted); margin-bottom:8px; font-family:'IBM Plex Mono',monospace; letter-spacing:0.03em;">사진 기준 정렬</label>
+            <div class="shape-grid align-grid">
+              <button class="align-btn" id="alignLeftBtn" title="왼쪽 정렬">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="6" x2="16" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="13" y2="18"/></svg>
+              </button>
+              <button class="align-btn active" id="alignCenterBtn" title="가운데 정렬">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="7" y1="6" x2="17" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="6" y1="18" x2="18" y2="18"/></svg>
+              </button>
+              <button class="align-btn" id="alignRightBtn" title="오른쪽 정렬">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="8" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="11" y1="18" x2="20" y2="18"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="field-row" style="margin-top:14px;">
+            <div>
+              <button class="btn danger-outline small full" id="deleteTextBtn" style="width:100%;">텍스트 삭제</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="crop-modal" id="resultModal">
+  <div class="crop-dialog">
+    <div class="crop-dialog-head">
+      <h3>완성된 이미지</h3>
+      <span>이미지를 길게 눌러 저장하세요</span>
+    </div>
+    <div class="crop-stage result-stage">
+      <img id="resultImage" alt="완성된 사진">
+    </div>
+    <div class="result-hint">
+      📱 iPhone·iPad: 이미지를 길게 누른 뒤 <b>"사진에 추가"</b>를 선택하세요<br>
+      💻 PC·Android: 아래 다운로드 버튼을 누르세요
+    </div>
+    <div class="crop-footer">
+      <a class="btn secondary small" id="resultDownloadLink" download="frame-and-print.png">다운로드</a>
+      <div class="crop-buttons">
+        <button class="btn primary small" id="resultCloseBtn">닫기</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="crop-modal" id="cropModal">
+  <div class="crop-dialog">
+    <div class="crop-dialog-head">
+      <h3>사진 크롭</h3>
+      <span>모서리를 끌어 크기를, 안쪽을 끌어 위치를 조정하세요</span>
+    </div>
+    <div class="crop-stage" id="cropStage">
+      <img id="cropImage" alt="">
+      <div class="crop-rect" id="cropRect">
+        <div class="crop-handle nw" data-handle="nw"></div>
+        <div class="crop-handle ne" data-handle="ne"></div>
+        <div class="crop-handle sw" data-handle="sw"></div>
+        <div class="crop-handle se" data-handle="se"></div>
+      </div>
+    </div>
+    <div class="crop-footer">
+      <button class="btn secondary small" id="cropResetBtn">전체 선택</button>
+      <div class="crop-buttons">
+        <button class="btn secondary small" id="cropCancelBtn">취소</button>
+        <button class="btn primary small" id="cropApplyBtn">크롭 적용</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const canvas = document.getElementById('previewCanvas');
+const ctx = canvas.getContext('2d');
+const dropzone = document.getElementById('dropzone');
+const fileInput = document.getElementById('fileInput');
+const canvasShell = document.getElementById('canvasShell');
+const dimsLabel = document.getElementById('dimsLabel');
+const downloadBtn = document.getElementById('downloadBtn');
+const cropBtn = document.getElementById('cropBtn');
+const centerPhotoBtn = document.getElementById('centerPhotoBtn');
+const zoomSlider = document.getElementById('zoomSlider');
+const zoomVal = document.getElementById('zoomVal');
+const paddingSlider = document.getElementById('paddingSlider');
+const paddingVal = document.getElementById('paddingVal');
+const bottomPadSlider = document.getElementById('bottomPadSlider');
+const bottomPadVal = document.getElementById('bottomPadVal');
+const swatchesEl = document.getElementById('swatches');
+const shapeGrid = document.getElementById('shapeGrid');
+const selectionOutline = document.getElementById('selectionOutline');
+const pickHint = document.getElementById('pickHint');
+
+const bgTypeGrid = document.getElementById('bgTypeGrid');
+const bgSolidSection = document.getElementById('bgSolidSection');
+const bgLinearSection = document.getElementById('bgLinearSection');
+const bgRadialSection = document.getElementById('bgRadialSection');
+const bgPatternSection = document.getElementById('bgPatternSection');
+const angleSlider = document.getElementById('angleSlider');
+const angleVal = document.getElementById('angleVal');
+const patternTypeGrid = document.getElementById('patternTypeGrid');
+const patternSizeSlider = document.getElementById('patternSizeSlider');
+const patternSizeVal = document.getElementById('patternSizeVal');
+
+const cameraStatus = document.getElementById('cameraStatus');
+const cameraFields = document.getElementById('cameraFields');
+const cameraStampBtn = document.getElementById('cameraStampBtn');
+const dateFormatSelect = document.getElementById('dateFormatSelect');
+const timeFormatSelect = document.getElementById('timeFormatSelect');
+const CAMERA_FIELD_KEYS = ['model','fNumber','exposureTime','iso','focalLength','date','time'];
+
+const addTextBtn = document.getElementById('addTextBtn');
+const textEmpty = document.getElementById('textEmpty');
+const layerList = document.getElementById('layerList');
+const textEdit = document.getElementById('textEdit');
+const textContent = document.getElementById('textContent');
+const textFont = document.getElementById('textFont');
+const textSize = document.getElementById('textSize');
+const textSizeVal = document.getElementById('textSizeVal');
+const boldToggle = document.getElementById('boldToggle');
+const deleteTextBtn = document.getElementById('deleteTextBtn');
+const alignLeftBtn = document.getElementById('alignLeftBtn');
+const alignCenterBtn = document.getElementById('alignCenterBtn');
+const alignRightBtn = document.getElementById('alignRightBtn');
+
+const resultModal = document.getElementById('resultModal');
+const resultImage = document.getElementById('resultImage');
+const resultDownloadLink = document.getElementById('resultDownloadLink');
+const resultCloseBtn = document.getElementById('resultCloseBtn');
+
+const cropModal = document.getElementById('cropModal');
+const cropStage = document.getElementById('cropStage');
+const cropImage = document.getElementById('cropImage');
+const cropRectEl = document.getElementById('cropRect');
+const cropResetBtn = document.getElementById('cropResetBtn');
+const cropCancelBtn = document.getElementById('cropCancelBtn');
+const cropApplyBtn = document.getElementById('cropApplyBtn');
+
+let img = null;            // working image placed on the canvas (may be cropped)
+let originalImage = null;  // pristine uploaded image, used as the crop source
+let outputW = 1080, outputH = 1080;
+let shape = 'square';
+let scaleFactor = 100;
+let paddingPct = 8;
+let extraBottomPct = 0;
+let offsetX = 0, offsetY = 0;
+let baseScale = 1;
+let rawDateTimeOriginal = null;
+let cameraStampLayerId = null;
+
+let bgType = 'solid';
+let bgColor1 = '#F3EFE7';
+let bgColor2 = '#C1653D';
+let gradientAngle = 45;
+let patternType = 'dots';
+let patternSize = 8;
+
+let textLayers = [];
+let selectedTextId = null;
+let nextLayerId = 1;
+
+let dragTarget = null; // 'image' | textLayerId
+let dragStart = {x:0,y:0};
+let dragOriginOffset = {x:0,y:0};
+
+let pickModeActive = false;
+let pickCallback = null;
+
+const PRESET_COLORS = ['#F3EFE7','#1B1A18','#7C8A72','#C1653D','#3C5A78','#C98A98','#B9C4C0','#D9A441'];
+const EYEDROP_SVG = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13.5 6.5l4 4L7 21H3v-4z"/><path d="M17.5 2.5a2.12 2.12 0 0 1 3 3L18 8l-3-3z"/></svg>';
+
+function getContrastColor(hex){
+  const c = hex.replace('#','');
+  if(c.length !== 6) return '#1B1A18';
+  const r = parseInt(c.substr(0,2),16), g = parseInt(c.substr(2,2),16), b = parseInt(c.substr(4,2),16);
+  const yiq = (r*299 + g*587 + b*114) / 1000;
+  return yiq >= 150 ? '#1B1A18' : '#F3EFE7';
+}
+
+function rgbToHex(r,g,b){
+  return '#' + [r,g,b].map(v => v.toString(16).padStart(2,'0')).join('');
+}
+
+/* ---------- eyedropper ---------- */
+
+function startEyedropper(applyCallback){
+  if(window.EyeDropper){
+    const ed = new window.EyeDropper();
+    ed.open().then(result=>{ applyCallback(result.sRGBHex); }).catch(()=>{});
+    return;
+  }
+  pickModeActive = true;
+  pickCallback = applyCallback;
+  canvas.classList.add('picking');
+  pickHint.style.display = 'block';
+}
+
+function cancelPickMode(){
+  pickModeActive = false;
+  pickCallback = null;
+  canvas.classList.remove('picking');
+  pickHint.style.display = 'none';
+}
+
+window.addEventListener('keydown', (e)=>{
+  if(e.key === 'Escape' && pickModeActive) cancelPickMode();
+  if(e.key === 'Escape' && cropModal.classList.contains('open')) closeCropModal();
+  if(e.key === 'Escape' && resultModal.classList.contains('open')) resultModal.classList.remove('open');
+});
+
+/* ---------- reusable color field ---------- */
+
+function createColorField(container, opts){
+  container.innerHTML = '';
+  const wrap = document.createElement('div');
+  wrap.className = 'color-field';
+  const lbl = document.createElement('label');
+  lbl.textContent = opts.label;
+  const row = document.createElement('div');
+  row.className = 'color-field-row';
+
+  const inp = document.createElement('input');
+  inp.type = 'color';
+  inp.value = opts.initial;
+
+  const dropBtn = document.createElement('button');
+  dropBtn.type = 'button';
+  dropBtn.className = 'eyedrop-btn';
+  dropBtn.title = '스포이드로 색상 추출';
+  dropBtn.innerHTML = EYEDROP_SVG;
+
+  const hex = document.createElement('span');
+  hex.className = 'hex-mini';
+  hex.textContent = opts.initial.toUpperCase();
+
+  inp.addEventListener('input', ()=>{
+    hex.textContent = inp.value.toUpperCase();
+    opts.onChange(inp.value);
+  });
+  dropBtn.addEventListener('click', ()=>{
+    startEyedropper((hexColor)=>{
+      inp.value = hexColor;
+      hex.textContent = hexColor.toUpperCase();
+      opts.onChange(hexColor);
+    });
+  });
+
+  row.appendChild(inp);
+  row.appendChild(dropBtn);
+  row.appendChild(hex);
+  wrap.appendChild(lbl);
+  wrap.appendChild(row);
+  container.appendChild(wrap);
+  return {input: inp, hexEl: hex};
+}
+
+/* ---------- background color fields ---------- */
+
+createColorField(document.getElementById('bgSolidColorField'), {
+  label: '배경 색상', initial: bgColor1,
+  onChange: (v)=>{ bgColor1 = v; buildSwatches(); draw(); }
+});
+createColorField(document.getElementById('bgLinearColor1Field'), {
+  label: '시작 색상', initial: bgColor1,
+  onChange: (v)=>{ bgColor1 = v; draw(); }
+});
+createColorField(document.getElementById('bgLinearColor2Field'), {
+  label: '끝 색상', initial: bgColor2,
+  onChange: (v)=>{ bgColor2 = v; draw(); }
+});
+createColorField(document.getElementById('bgRadialColor1Field'), {
+  label: '중심 색상', initial: bgColor1,
+  onChange: (v)=>{ bgColor1 = v; draw(); }
+});
+createColorField(document.getElementById('bgRadialColor2Field'), {
+  label: '외곽 색상', initial: bgColor2,
+  onChange: (v)=>{ bgColor2 = v; draw(); }
+});
+createColorField(document.getElementById('bgPatternColor1Field'), {
+  label: '바탕 색상', initial: bgColor1,
+  onChange: (v)=>{ bgColor1 = v; draw(); }
+});
+createColorField(document.getElementById('bgPatternColor2Field'), {
+  label: '무늬 색상', initial: bgColor2,
+  onChange: (v)=>{ bgColor2 = v; draw(); }
+});
+
+const textColorFieldRefs = createColorField(document.getElementById('textColorField'), {
+  label: '텍스트 색상', initial: '#1B1A18',
+  onChange: (v)=>{ const layer = currentLayer(); if(!layer) return; layer.color = v; draw(); }
+});
+
+function buildSwatches(){
+  swatchesEl.innerHTML = '';
+  PRESET_COLORS.forEach(c=>{
+    const el = document.createElement('div');
+    el.className = 'swatch' + (c.toUpperCase() === bgColor1.toUpperCase() ? ' active' : '');
+    el.style.background = c;
+    el.addEventListener('click', ()=>{
+      bgColor1 = c;
+      const field = document.getElementById('bgSolidColorField').querySelector('input');
+      const hexEl = document.getElementById('bgSolidColorField').querySelector('.hex-mini');
+      field.value = c;
+      hexEl.textContent = c.toUpperCase();
+      buildSwatches();
+      draw();
+    });
+    swatchesEl.appendChild(el);
+  });
+}
+buildSwatches();
+
+/* ---------- background type switching ---------- */
+
+bgTypeGrid.addEventListener('click', (e)=>{
+  const btn = e.target.closest('.shape-btn');
+  if(!btn) return;
+  bgTypeGrid.querySelectorAll('.shape-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  const type = btn.dataset.bgtype;
+  bgType = (type === 'pattern') ? ('pattern-' + patternType) : type;
+
+  [bgSolidSection, bgLinearSection, bgRadialSection, bgPatternSection].forEach(s=>s.classList.remove('active'));
+  if(type === 'solid') bgSolidSection.classList.add('active');
+  else if(type === 'gradient-linear') bgLinearSection.classList.add('active');
+  else if(type === 'gradient-radial') bgRadialSection.classList.add('active');
+  else if(type === 'pattern') bgPatternSection.classList.add('active');
+  draw();
+});
+
+patternTypeGrid.addEventListener('click', (e)=>{
+  const btn = e.target.closest('.shape-btn');
+  if(!btn) return;
+  patternTypeGrid.querySelectorAll('.shape-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  patternType = btn.dataset.pattern;
+  bgType = 'pattern-' + patternType;
+  draw();
+});
+
+angleSlider.addEventListener('input', ()=>{
+  gradientAngle = Number(angleSlider.value);
+  angleVal.textContent = gradientAngle + '°';
+  draw();
+});
+
+patternSizeSlider.addEventListener('input', ()=>{
+  patternSize = Number(patternSizeSlider.value);
+  patternSizeVal.textContent = patternSize + '%';
+  draw();
+});
+
+/* ---------- background rendering ---------- */
+
+function renderBackground(){
+  const w = outputW, h = outputH;
+  if(bgType === 'solid'){
+    ctx.fillStyle = bgColor1;
+    ctx.fillRect(0,0,w,h);
+    return;
+  }
+  if(bgType === 'gradient-linear'){
+    const angleRad = gradientAngle * Math.PI/180;
+    const dirX = Math.sin(angleRad), dirY = -Math.cos(angleRad);
+    const halfDiag = Math.sqrt(w*w+h*h)/2;
+    const cx = w/2, cy = h/2;
+    const g = ctx.createLinearGradient(cx-dirX*halfDiag, cy-dirY*halfDiag, cx+dirX*halfDiag, cy+dirY*halfDiag);
+    g.addColorStop(0, bgColor1);
+    g.addColorStop(1, bgColor2);
+    ctx.fillStyle = g;
+    ctx.fillRect(0,0,w,h);
+    return;
+  }
+  if(bgType === 'gradient-radial'){
+    const cx = w/2, cy = h/2;
+    const r = Math.max(w,h) * 0.75;
+    const g = ctx.createRadialGradient(cx,cy,0,cx,cy,r);
+    g.addColorStop(0, bgColor1);
+    g.addColorStop(1, bgColor2);
+    ctx.fillStyle = g;
+    ctx.fillRect(0,0,w,h);
+    return;
+  }
+  if(bgType === 'pattern-dots'){
+    ctx.fillStyle = bgColor1;
+    ctx.fillRect(0,0,w,h);
+    const unit = Math.min(w,h) * (patternSize/100);
+    const spacing = unit * 2.2;
+    const radius = unit * 0.5;
+    ctx.fillStyle = bgColor2;
+    let row = 0;
+    for(let y = spacing/2; y < h+spacing; y += spacing*0.87){
+      const offset = (row % 2 === 0) ? 0 : spacing/2;
+      for(let x = -spacing+offset; x < w+spacing; x += spacing){
+        ctx.beginPath();
+        ctx.arc(x, y, radius, 0, Math.PI*2);
+        ctx.fill();
+      }
+      row++;
+    }
+    return;
+  }
+  if(bgType === 'pattern-stripes'){
+    ctx.fillStyle = bgColor1;
+    ctx.fillRect(0,0,w,h);
+    const stripeW = Math.min(w,h) * (patternSize/100);
+    ctx.save();
+    ctx.translate(w/2, h/2);
+    ctx.rotate(Math.PI/4);
+    const diag = Math.sqrt(w*w+h*h);
+    ctx.fillStyle = bgColor2;
+    for(let x = -diag; x < diag; x += stripeW*2){
+      ctx.fillRect(x, -diag, stripeW, diag*2);
+    }
+    ctx.restore();
+    return;
+  }
+}
+
+function getDims(shapeName){
+  if(shapeName === 'original' && img){
+    const maxDim = 1600;
+    const ratio = img.naturalWidth / img.naturalHeight;
+    if(ratio >= 1) return {w:maxDim, h:Math.round(maxDim/ratio)};
+    return {w:Math.round(maxDim*ratio), h:maxDim};
+  }
+  switch(shapeName){
+    case 'portrait': return {w:1080,h:1350};
+    case 'story': return {w:1080,h:1920};
+    case 'landscape': return {w:1920,h:1080};
+    default: return {w:1080,h:1080};
+  }
+}
+
+function recomputeCanvasSize(){
+  const d = getDims(shape);
+  outputW = d.w; outputH = d.h;
+  canvas.width = outputW;
+  canvas.height = outputH;
+  dimsLabel.textContent = outputW + ' × ' + outputH + ' px';
+}
+
+function getVerticalMargins(){
+  const padPx = Math.min(outputW, outputH) * (paddingPct/100);
+  const bottomPx = padPx + Math.min(outputW, outputH) * (extraBottomPct/100);
+  return {top: padPx, bottom: bottomPx};
+}
+
+function computeBaseScale(){
+  if(!img){ baseScale = 1; return; }
+  const padPx = Math.min(outputW, outputH) * (paddingPct/100);
+  const margins = getVerticalMargins();
+  const insetW = Math.max(outputW - padPx*2, 10);
+  const insetH = Math.max(outputH - margins.top - margins.bottom, 10);
+  baseScale = Math.min(insetW / img.naturalWidth, insetH / img.naturalHeight);
+}
+
+/* current on-canvas bounds of the photo, used as the reference for text alignment */
+function getPhotoBounds(){
+  if(img){
+    const s = baseScale * (scaleFactor/100);
+    const w = img.naturalWidth * s;
+    const h = img.naturalHeight * s;
+    const margins = getVerticalMargins();
+    const centerY = (margins.top + (outputH - margins.bottom)) / 2;
+    const cx = outputW/2 + offsetX;
+    const cy = centerY + offsetY;
+    return {left: cx - w/2, right: cx + w/2, top: cy - h/2, bottom: cy + h/2};
+  }
+  return {left: outputW*0.06, right: outputW*0.94, top: outputH*0.06, bottom: outputH*0.94};
+}
+
+function getTextBBox(layer){
+  ctx.font = (layer.bold ? '700 ' : '400 ') + layer.size + 'px ' + layer.font;
+  const lines = layer.text.length ? layer.text.split('\n') : [' '];
+  let maxWidth = 0;
+  lines.forEach(l=>{ maxWidth = Math.max(maxWidth, ctx.measureText(l).width); });
+  const lineHeight = layer.size * 1.3;
+  const totalHeight = lineHeight * lines.length;
+  const pad = 10;
+  let boxLeft;
+  if(layer.align === 'left') boxLeft = layer.x - pad;
+  else if(layer.align === 'right') boxLeft = layer.x - maxWidth - pad;
+  else boxLeft = layer.x - maxWidth/2 - pad;
+  return {
+    x: boxLeft,
+    y: layer.y - totalHeight/2 - pad,
+    w: maxWidth + pad*2,
+    h: totalHeight + pad*2,
+    lineHeight, lines
+  };
+}
+
+function drawTextLayer(layer){
+  const bbox = getTextBBox(layer);
+  ctx.font = (layer.bold ? '700 ' : '400 ') + layer.size + 'px ' + layer.font;
+  ctx.fillStyle = layer.color;
+  ctx.textAlign = layer.align || 'center';
+  ctx.textBaseline = 'middle';
+  const startY = layer.y - (bbox.lineHeight * bbox.lines.length)/2 + bbox.lineHeight/2;
+  bbox.lines.forEach((line,i)=>{
+    ctx.fillText(line, layer.x, startY + i*bbox.lineHeight);
+  });
+}
+
+function draw(){
+  ctx.clearRect(0,0,outputW,outputH);
+  renderBackground();
+
+  if(img){
+    const s = baseScale * (scaleFactor/100);
+    const w = img.naturalWidth * s;
+    const h = img.naturalHeight * s;
+    const margins = getVerticalMargins();
+    const centerY = (margins.top + (outputH - margins.bottom)) / 2;
+    const cx = outputW/2 + offsetX;
+    const cy = centerY + offsetY;
+    ctx.drawImage(img, cx - w/2, cy - h/2, w, h);
+  }
+
+  textLayers.forEach(drawTextLayer);
+  updateSelectionOutline();
+}
+
+function updateSelectionOutline(){
+  if(!selectedTextId){ selectionOutline.style.display = 'none'; return; }
+  const layer = textLayers.find(t=>t.id === selectedTextId);
+  if(!layer){ selectionOutline.style.display = 'none'; return; }
+  const rect = canvas.getBoundingClientRect();
+  const shellRect = canvasShell.getBoundingClientRect();
+  const scale = rect.width / outputW;
+  const bbox = getTextBBox(layer);
+  selectionOutline.style.display = 'block';
+  selectionOutline.style.left = ((rect.left - shellRect.left) + bbox.x*scale) + 'px';
+  selectionOutline.style.top = ((rect.top - shellRect.top) + bbox.y*scale) + 'px';
+  selectionOutline.style.width = (bbox.w*scale) + 'px';
+  selectionOutline.style.height = (bbox.h*scale) + 'px';
+}
+
+/* ---------- image upload ---------- */
+
+async function loadImageFile(file){
+  if(!file || !file.type.startsWith('image/')) return;
+
+  cameraStatus.textContent = '촬영 정보를 확인하는 중...';
+  cameraStatus.style.display = 'block';
+  cameraFields.style.display = 'none';
+  cameraStampBtn.style.display = 'none';
+  cameraStampBtn.textContent = '텍스트로 추가';
+  cameraStampLayerId = null;
+  rawDateTimeOriginal = null;
+  CAMERA_FIELD_KEYS.forEach(key=>{
+    document.getElementById('fieldCheck-'+key).checked = false;
+    document.getElementById('fieldValue-'+key).value = '';
+  });
+
+  const url = URL.createObjectURL(file);
+  const image = new Image();
+  image.onload = ()=>{
+    img = image;
+    originalImage = image;
+    offsetX = 0; offsetY = 0; scaleFactor = 100;
+    zoomSlider.value = 100; zoomVal.textContent = '100%';
+    dropzone.style.display = 'none';
+    canvas.classList.remove('hidden');
+    downloadBtn.disabled = false;
+    cropBtn.disabled = false;
+    recomputeCanvasSize();
+    computeBaseScale();
+    draw();
+  };
+  image.src = url;
+
+  try{
+    const buffer = await file.arrayBuffer();
+    const exif = parseExifFull(buffer);
+    populateCameraFields(exif);
+  }catch(err){
+    populateCameraFields(null);
+  }
+}
+
+function populateCameraFields(exif){
+  cameraFields.style.display = 'flex';
+  cameraStampBtn.style.display = 'block';
+
+  const hasAny = exif && Object.keys(exif).length > 0;
+  cameraStatus.textContent = hasAny
+    ? '촬영 정보를 자동으로 불러왔어요. 넣고 싶은 항목만 체크하세요.'
+    : '이 사진에서는 촬영 정보를 찾지 못했어요. 아래에 직접 입력할 수 있어요.';
+
+  if(!exif) exif = {};
+
+  if(exif.model){
+    document.getElementById('fieldValue-model').value = exif.model;
+    document.getElementById('fieldCheck-model').checked = true;
+  }
+  if(exif.fNumber){
+    document.getElementById('fieldValue-fNumber').value = formatFNumber(exif.fNumber);
+    document.getElementById('fieldCheck-fNumber').checked = true;
+  }
+  if(exif.exposureTime){
+    document.getElementById('fieldValue-exposureTime').value = formatExposureTime(exif.exposureTime);
+    document.getElementById('fieldCheck-exposureTime').checked = true;
+  }
+  if(exif.iso){
+    document.getElementById('fieldValue-iso').value = 'ISO ' + exif.iso;
+    document.getElementById('fieldCheck-iso').checked = true;
+  }
+  if(exif.focalLength){
+    document.getElementById('fieldValue-focalLength').value = Math.round(exif.focalLength) + 'mm';
+    document.getElementById('fieldCheck-focalLength').checked = true;
+  }
+  const rawDate = exif.dateTimeOriginal || exif.dateTime;
+  if(rawDate){
+    rawDateTimeOriginal = rawDate;
+    document.getElementById('fieldValue-date').value = formatExifDate(rawDate, dateFormatSelect.value);
+    document.getElementById('fieldCheck-date').checked = true;
+    const t = formatExifTime(rawDate, timeFormatSelect.value);
+    if(t){
+      document.getElementById('fieldValue-time').value = t;
+      document.getElementById('fieldCheck-time').checked = true;
+    }
+  }
+}
+
+/* ---------- EXIF value formatters ---------- */
+
+function formatFNumber(v){ return 'f/' + (Math.round(v*10)/10); }
+function formatExposureTime(v){
+  return v < 1 ? ('1/' + Math.round(1/v) + 's') : ((Math.round(v*10)/10) + 's');
+}
+function formatExifDate(raw, fmt){
+  const datePart = raw.split(' ')[0];
+  const parts = datePart.split(':');
+  if(parts.length < 3) return datePart;
+  const [y,m,d] = parts;
+  switch(fmt){
+    case 'dash': return `${y}-${m}-${d}`;
+    case 'short': return `${y.slice(2)}.${m}.${d}`;
+    case 'us': return `${m}/${d}/${y}`;
+    default: return `${y}.${m}.${d}`;
+  }
+}
+function formatExifTime(raw, fmt){
+  const timePart = raw.split(' ')[1];
+  if(!timePart) return '';
+  const [hStr, mi] = timePart.split(':');
+  const h = parseInt(hStr, 10);
+  if(fmt === '12h'){
+    const ampm = h >= 12 ? 'PM' : 'AM';
+    let h12 = h % 12; if(h12 === 0) h12 = 12;
+    return `${h12}:${mi} ${ampm}`;
+  }
+  return `${String(h).padStart(2,'0')}:${mi}`;
+}
+
+dateFormatSelect.addEventListener('change', ()=>{
+  if(rawDateTimeOriginal){
+    document.getElementById('fieldValue-date').value = formatExifDate(rawDateTimeOriginal, dateFormatSelect.value);
+  }
+});
+timeFormatSelect.addEventListener('change', ()=>{
+  if(rawDateTimeOriginal){
+    const t = formatExifTime(rawDateTimeOriginal, timeFormatSelect.value);
+    if(t) document.getElementById('fieldValue-time').value = t;
+  }
+});
+
+/* ---------- full EXIF parser: Make/Model + shooting data + date/time ---------- */
+
+function parseExifFull(buffer){
+  try{
+    const view = new DataView(buffer);
+    if(view.getUint16(0, false) !== 0xFFD8) return null; // not a JPEG
+    let offset = 2;
+    const len = view.byteLength;
+    while(offset < len - 4){
+      if(view.getUint8(offset) !== 0xFF) break;
+      const marker = view.getUint8(offset+1);
+      if(marker === 0xE1){
+        const segLength = view.getUint16(offset+2, false);
+        const header = String.fromCharCode(
+          view.getUint8(offset+4), view.getUint8(offset+5),
+          view.getUint8(offset+6), view.getUint8(offset+7)
+        );
+        if(header === 'Exif'){
+          return readExifData(view, offset+10);
+        }
+        offset += 2 + segLength;
+      } else if(marker === 0xD8 || (marker >= 0xD0 && marker <= 0xD9) || marker === 0x01){
+        offset += 2;
+      } else if(marker === 0xDA){
+        break;
+      } else {
+        const segLength = view.getUint16(offset+2, false);
+        if(segLength < 2) break;
+        offset += 2 + segLength;
+      }
+    }
+  }catch(e){ /* fall through */ }
+  return null;
+}
+
+function getIFDEntries(view, ifdOffset, little){
+  const numEntries = view.getUint16(ifdOffset, little);
+  const entries = {};
+  for(let i=0;i<numEntries;i++){
+    const entryOffset = ifdOffset + 2 + i*12;
+    entries[view.getUint16(entryOffset, little)] = entryOffset;
+  }
+  return entries;
+}
+function readAsciiEntry(view, tiffStart, entryOffset, little){
+  const count = view.getUint32(entryOffset+4, little);
+  let valueOffset = entryOffset+8;
+  if(count > 4) valueOffset = tiffStart + view.getUint32(entryOffset+8, little);
+  let str = '';
+  for(let j=0;j<count-1;j++) str += String.fromCharCode(view.getUint8(valueOffset+j));
+  return str.trim();
+}
+function readRationalEntry(view, tiffStart, entryOffset, little){
+  const count = view.getUint32(entryOffset+4, little);
+  let valueOffset = entryOffset+8;
+  if(count*8 > 4) valueOffset = tiffStart + view.getUint32(entryOffset+8, little);
+  const num = view.getUint32(valueOffset, little);
+  const den = view.getUint32(valueOffset+4, little);
+  return den !== 0 ? num/den : 0;
+}
+function readShortEntry(view, entryOffset, little){
+  const type = view.getUint16(entryOffset+2, little);
+  return type === 3 ? view.getUint16(entryOffset+8, little) : view.getUint32(entryOffset+8, little);
+}
+
+function readExifData(view, tiffStart){
+  const byteOrder = view.getUint16(tiffStart, false);
+  const little = byteOrder === 0x4949;
+  const u32 = (o)=> view.getUint32(o, little);
+  const firstIFD = u32(tiffStart+4);
+  const ifd0 = getIFDEntries(view, tiffStart+firstIFD, little);
+  const result = {};
+
+  if(ifd0[0x010F]) result.make = readAsciiEntry(view, tiffStart, ifd0[0x010F], little);
+  if(ifd0[0x0110]) result.model = readAsciiEntry(view, tiffStart, ifd0[0x0110], little);
+  if(ifd0[0x0132]) result.dateTime = readAsciiEntry(view, tiffStart, ifd0[0x0132], little);
+  if(result.make && result.model && result.model.toLowerCase().includes(result.make.toLowerCase()) === false && result.make.length < 20){
+    result.model = result.make + ' ' + result.model;
+  }
+
+  if(ifd0[0x8769]){
+    try{
+      const exifIFDOffset = tiffStart + u32(ifd0[0x8769]+8);
+      const exifIFD = getIFDEntries(view, exifIFDOffset, little);
+      if(exifIFD[0x829D]) result.fNumber = readRationalEntry(view, tiffStart, exifIFD[0x829D], little);
+      if(exifIFD[0x829A]) result.exposureTime = readRationalEntry(view, tiffStart, exifIFD[0x829A], little);
+      if(exifIFD[0x8827]) result.iso = readShortEntry(view, exifIFD[0x8827], little);
+      if(exifIFD[0x920A]) result.focalLength = readRationalEntry(view, tiffStart, exifIFD[0x920A], little);
+      if(exifIFD[0x9003]) result.dateTimeOriginal = readAsciiEntry(view, tiffStart, exifIFD[0x9003], little);
+    }catch(e){ /* sub-IFD read failed, keep what we have */ }
+  }
+  return result;
+}
+
+dropzone.addEventListener('click', ()=>fileInput.click());
+fileInput.addEventListener('change', (e)=>{
+  if(e.target.files[0]) loadImageFile(e.target.files[0]);
+});
+
+['dragenter','dragover'].forEach(ev=>{
+  canvasShell.addEventListener(ev, (e)=>{ e.preventDefault(); dropzone.classList.add('hover'); });
+});
+['dragleave','drop'].forEach(ev=>{
+  canvasShell.addEventListener(ev, (e)=>{ e.preventDefault(); dropzone.classList.remove('hover'); });
+});
+canvasShell.addEventListener('drop', (e)=>{
+  const file = e.dataTransfer.files[0];
+  if(file) loadImageFile(file);
+});
+
+/* ---------- camera info stamp ---------- */
+
+function buildCameraStampText(){
+  const line1 = [];
+  const line2 = [];
+  if(document.getElementById('fieldCheck-model').checked){
+    const v = document.getElementById('fieldValue-model').value.trim();
+    if(v) line1.push(v);
+  }
+  ['fNumber','exposureTime','iso','focalLength','date','time'].forEach(key=>{
+    const cb = document.getElementById('fieldCheck-'+key);
+    const inp = document.getElementById('fieldValue-'+key);
+    if(cb.checked){
+      const v = inp.value.trim();
+      if(v) line2.push(v);
+    }
+  });
+  const lines = [];
+  if(line1.length) lines.push(line1.join(' '));
+  if(line2.length) lines.push(line2.join('  ·  '));
+  return lines.join('\n');
+}
+
+cameraStampBtn.addEventListener('click', ()=>{
+  const text = buildCameraStampText();
+  if(!text) return;
+  const existing = textLayers.find(t=>t.id === cameraStampLayerId);
+  if(existing){
+    existing.text = text;
+    renderLayerList();
+    if(selectedTextId === existing.id) syncEditFields();
+    draw();
+  } else {
+    addTextLayer(text, {stamp:true});
+    cameraStampLayerId = selectedTextId;
+    cameraStampBtn.textContent = '텍스트 업데이트';
+  }
+});
+
+/* ---------- shape / photo controls ---------- */
+
+shapeGrid.addEventListener('click', (e)=>{
+  const btn = e.target.closest('.shape-btn');
+  if(!btn) return;
+  shapeGrid.querySelectorAll('.shape-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  shape = btn.dataset.shape;
+  recomputeCanvasSize();
+  computeBaseScale();
+  draw();
+});
+
+zoomSlider.addEventListener('input', (e)=>{
+  scaleFactor = Number(e.target.value);
+  zoomVal.textContent = scaleFactor + '%';
+  draw();
+});
+
+paddingSlider.addEventListener('input', (e)=>{
+  paddingPct = Number(e.target.value);
+  paddingVal.textContent = paddingPct + '%';
+  computeBaseScale();
+  draw();
+});
+
+bottomPadSlider.addEventListener('input', (e)=>{
+  extraBottomPct = Number(e.target.value);
+  bottomPadVal.textContent = extraBottomPct + '%';
+  computeBaseScale();
+  draw();
+});
+
+centerPhotoBtn.addEventListener('click', ()=>{
+  offsetX = 0; offsetY = 0;
+  draw();
+});
+
+downloadBtn.addEventListener('click', ()=>{
+  selectedTextId = null;
+  updateSelectionOutline();
+  renderLayerList();
+  textEdit.style.display = 'none';
+  draw();
+  const dataUrl = canvas.toDataURL('image/png');
+  resultImage.src = dataUrl;
+  resultDownloadLink.href = dataUrl;
+  resultModal.classList.add('open');
+});
+
+resultCloseBtn.addEventListener('click', ()=>{
+  resultModal.classList.remove('open');
+});
+
+/* ---------- free crop tool ---------- */
+
+let cropDisplayW = 0, cropDisplayH = 0;
+let cropRectState = {x:0,y:0,w:0,h:0};
+let cropDragMode = null; // 'move' | 'nw' | 'ne' | 'sw' | 'se'
+let cropPointerStart = {x:0,y:0};
+let cropOrigRect = {x:0,y:0,w:0,h:0};
+const CROP_MIN = 24;
+
+function openCropModal(){
+  if(!originalImage) return;
+  cropModal.classList.add('open');
+  cropImage.src = originalImage.src;
+
+  const initRect = ()=>{
+    requestAnimationFrame(()=>{
+      const rect = cropImage.getBoundingClientRect();
+      cropDisplayW = rect.width;
+      cropDisplayH = rect.height;
+      cropRectState = {x:0, y:0, w:cropDisplayW, h:cropDisplayH};
+      renderCropRect();
+    });
+  };
+  if(cropImage.complete) initRect();
+  else cropImage.onload = initRect;
+}
+
+function closeCropModal(){
+  cropModal.classList.remove('open');
+  cropDragMode = null;
+}
+
+function renderCropRect(){
+  const stageRect = cropStage.getBoundingClientRect();
+  const imgRect = cropImage.getBoundingClientRect();
+  const offsetLeft = imgRect.left - stageRect.left;
+  const offsetTop = imgRect.top - stageRect.top;
+  cropRectEl.style.left = (offsetLeft + cropRectState.x) + 'px';
+  cropRectEl.style.top = (offsetTop + cropRectState.y) + 'px';
+  cropRectEl.style.width = cropRectState.w + 'px';
+  cropRectEl.style.height = cropRectState.h + 'px';
+}
+
+cropBtn.addEventListener('click', openCropModal);
+cropCancelBtn.addEventListener('click', closeCropModal);
+cropResetBtn.addEventListener('click', ()=>{
+  cropRectState = {x:0, y:0, w:cropDisplayW, h:cropDisplayH};
+  renderCropRect();
+});
+
+cropRectEl.addEventListener('pointerdown', (e)=>{
+  const handle = e.target.closest('.crop-handle');
+  cropDragMode = handle ? handle.dataset.handle : 'move';
+  cropPointerStart = {x:e.clientX, y:e.clientY};
+  cropOrigRect = {...cropRectState};
+  cropRectEl.setPointerCapture(e.pointerId);
+  e.stopPropagation();
+});
+
+cropRectEl.addEventListener('pointermove', (e)=>{
+  if(!cropDragMode) return;
+  const dx = e.clientX - cropPointerStart.x;
+  const dy = e.clientY - cropPointerStart.y;
+  let {x,y,w,h} = cropOrigRect;
+
+  if(cropDragMode === 'move'){
+    x = Math.min(Math.max(cropOrigRect.x + dx, 0), cropDisplayW - w);
+    y = Math.min(Math.max(cropOrigRect.y + dy, 0), cropDisplayH - h);
+  } else {
+    let left = cropOrigRect.x, top = cropOrigRect.y;
+    let right = cropOrigRect.x + cropOrigRect.w, bottom = cropOrigRect.y + cropOrigRect.h;
+    if(cropDragMode.includes('w')) left = Math.min(Math.max(left + dx, 0), right - CROP_MIN);
+    if(cropDragMode.includes('e')) right = Math.max(Math.min(right + dx, cropDisplayW), left + CROP_MIN);
+    if(cropDragMode.includes('n')) top = Math.min(Math.max(top + dy, 0), bottom - CROP_MIN);
+    if(cropDragMode.includes('s')) bottom = Math.max(Math.min(bottom + dy, cropDisplayH), top + CROP_MIN);
+    x = left; y = top; w = right-left; h = bottom-top;
+  }
+  cropRectState = {x,y,w,h};
+  renderCropRect();
+});
+
+['pointerup','pointercancel'].forEach(ev=>{
+  cropRectEl.addEventListener(ev, ()=>{ cropDragMode = null; });
+});
+
+cropApplyBtn.addEventListener('click', ()=>{
+  if(!originalImage || cropDisplayW === 0) { closeCropModal(); return; }
+  const scaleRatio = originalImage.naturalWidth / cropDisplayW;
+  const sx = cropRectState.x * scaleRatio;
+  const sy = cropRectState.y * scaleRatio;
+  const sw = Math.max(1, Math.round(cropRectState.w * scaleRatio));
+  const sh = Math.max(1, Math.round(cropRectState.h * scaleRatio));
+
+  const off = document.createElement('canvas');
+  off.width = sw; off.height = sh;
+  const offCtx = off.getContext('2d');
+  offCtx.drawImage(originalImage, sx, sy, sw, sh, 0, 0, sw, sh);
+
+  off.toBlob((blob)=>{
+    const url = URL.createObjectURL(blob);
+    const cropped = new Image();
+    cropped.onload = ()=>{
+      img = cropped;
+      offsetX = 0; offsetY = 0; scaleFactor = 100;
+      zoomSlider.value = 100; zoomVal.textContent = '100%';
+      if(shape === 'original') recomputeCanvasSize();
+      computeBaseScale();
+      draw();
+      closeCropModal();
+      URL.revokeObjectURL(url);
+    };
+    cropped.src = url;
+  }, 'image/png');
+});
+
+/* ---------- text layers ---------- */
+
+function addTextLayer(initialText, opts){
+  opts = opts || {};
+  const margins = getVerticalMargins();
+  const layer = {
+    id: nextLayerId++,
+    text: initialText !== undefined ? initialText : '텍스트 입력',
+    x: outputW/2,
+    y: opts.stamp ? (outputH - margins.bottom/2) : outputH/2,
+    size: opts.stamp ? Math.max(18, Math.round(outputW*0.028)) : Math.max(24, Math.round(outputW*0.07)),
+    color: getContrastColor(bgColor1),
+    font: opts.stamp ? 'IBM Plex Mono' : 'Inter',
+    bold: false,
+    align: 'center'
+  };
+  textLayers.push(layer);
+  selectedTextId = layer.id;
+  renderLayerList();
+  syncEditFields();
+  draw();
+}
+
+addTextBtn.addEventListener('click', ()=> addTextLayer());
+
+function renderLayerList(){
+  textEmpty.style.display = textLayers.length ? 'none' : 'block';
+  layerList.innerHTML = '';
+  textLayers.forEach(layer=>{
+    const chip = document.createElement('div');
+    chip.className = 'layer-chip' + (layer.id === selectedTextId ? ' active' : '');
+    const label = document.createElement('span');
+    label.className = 'txt';
+    label.textContent = layer.text.replace(/\n/g,' ') || '(빈 텍스트)';
+    const del = document.createElement('span');
+    del.className = 'del';
+    del.textContent = '✕';
+    del.addEventListener('click', (e)=>{
+      e.stopPropagation();
+      textLayers = textLayers.filter(t=>t.id !== layer.id);
+      if(selectedTextId === layer.id) selectedTextId = null;
+      if(cameraStampLayerId === layer.id){ cameraStampLayerId = null; cameraStampBtn.textContent = '텍스트로 추가'; }
+      renderLayerList();
+      syncEditFields();
+      draw();
+    });
+    chip.appendChild(label);
+    chip.appendChild(del);
+    chip.addEventListener('click', ()=>{
+      selectedTextId = layer.id;
+      renderLayerList();
+      syncEditFields();
+      draw();
+    });
+    layerList.appendChild(chip);
+  });
+}
+
+function syncEditFields(){
+  const layer = textLayers.find(t=>t.id === selectedTextId);
+  if(!layer){
+    textEdit.style.display = 'none';
+    return;
+  }
+  textEdit.style.display = 'block';
+  textContent.value = layer.text;
+  textFont.value = layer.font;
+  textSize.value = layer.size;
+  textSizeVal.textContent = layer.size + 'px';
+  textColorFieldRefs.input.value = layer.color;
+  textColorFieldRefs.hexEl.textContent = layer.color.toUpperCase();
+  boldToggle.classList.toggle('active', layer.bold);
+  syncAlignButtons(layer.align);
+}
+
+function syncAlignButtons(align){
+  alignLeftBtn.classList.toggle('active', align === 'left');
+  alignCenterBtn.classList.toggle('active', align === 'center');
+  alignRightBtn.classList.toggle('active', align === 'right');
+}
+
+function currentLayer(){ return textLayers.find(t=>t.id === selectedTextId); }
+
+textContent.addEventListener('input', ()=>{
+  const layer = currentLayer(); if(!layer) return;
+  layer.text = textContent.value;
+  renderLayerList();
+  draw();
+});
+textFont.addEventListener('change', ()=>{
+  const layer = currentLayer(); if(!layer) return;
+  layer.font = textFont.value;
+  draw();
+});
+textSize.addEventListener('input', ()=>{
+  const layer = currentLayer(); if(!layer) return;
+  layer.size = Number(textSize.value);
+  textSizeVal.textContent = layer.size + 'px';
+  draw();
+});
+boldToggle.addEventListener('click', ()=>{
+  const layer = currentLayer(); if(!layer) return;
+  layer.bold = !layer.bold;
+  boldToggle.classList.toggle('active', layer.bold);
+  draw();
+});
+deleteTextBtn.addEventListener('click', ()=>{
+  const layer = currentLayer(); if(!layer) return;
+  textLayers = textLayers.filter(t=>t.id !== layer.id);
+  if(cameraStampLayerId === layer.id){ cameraStampLayerId = null; cameraStampBtn.textContent = '텍스트로 추가'; }
+  selectedTextId = null;
+  renderLayerList();
+  syncEditFields();
+  draw();
+});
+
+function applyAlign(align){
+  const layer = currentLayer(); if(!layer) return;
+  layer.align = align;
+  const b = getPhotoBounds();
+  const margin = Math.max(layer.size*0.35, (b.right-b.left)*0.02);
+  if(align === 'left') layer.x = b.left + margin;
+  else if(align === 'right') layer.x = b.right - margin;
+  else layer.x = (b.left + b.right) / 2;
+  syncAlignButtons(align);
+  draw();
+}
+alignLeftBtn.addEventListener('click', ()=>applyAlign('left'));
+alignCenterBtn.addEventListener('click', ()=>applyAlign('center'));
+alignRightBtn.addEventListener('click', ()=>applyAlign('right'));
+
+/* ---------- drag handling (image + text) + eyedropper pick ---------- */
+
+function canvasPointFromEvent(e){
+  const rect = canvas.getBoundingClientRect();
+  const scaleX = outputW / rect.width;
+  const scaleY = outputH / rect.height;
+  return {x:(e.clientX-rect.left)*scaleX, y:(e.clientY-rect.top)*scaleY};
+}
+
+function hitTestText(pt){
+  for(let i = textLayers.length-1; i>=0; i--){
+    const layer = textLayers[i];
+    const bbox = getTextBBox(layer);
+    if(pt.x >= bbox.x && pt.x <= bbox.x+bbox.w && pt.y >= bbox.y && pt.y <= bbox.y+bbox.h){
+      return layer;
+    }
+  }
+  return null;
+}
+
+canvas.addEventListener('pointerdown', (e)=>{
+  if(pickModeActive){
+    const pt = canvasPointFromEvent(e);
+    const px = Math.min(Math.max(Math.round(pt.x),0), outputW-1);
+    const py = Math.min(Math.max(Math.round(pt.y),0), outputH-1);
+    const data = ctx.getImageData(px, py, 1, 1).data;
+    const hex = rgbToHex(data[0], data[1], data[2]);
+    const cb = pickCallback;
+    cancelPickMode();
+    if(cb) cb(hex);
+    return;
+  }
+
+  const pt = canvasPointFromEvent(e);
+  const hitLayer = hitTestText(pt);
+
+  if(hitLayer){
+    dragTarget = hitLayer.id;
+    selectedTextId = hitLayer.id;
+    renderLayerList();
+    syncEditFields();
+    dragStart = {x:e.clientX, y:e.clientY};
+    dragOriginOffset = {x:hitLayer.x, y:hitLayer.y};
+    canvas.classList.add('dragging');
+    canvas.setPointerCapture(e.pointerId);
+    draw();
+    return;
+  }
+
+  if(selectedTextId !== null){
+    selectedTextId = null;
+    renderLayerList();
+    syncEditFields();
+    draw();
+  }
+
+  if(img){
+    dragTarget = 'image';
+    dragStart = {x:e.clientX, y:e.clientY};
+    dragOriginOffset = {x:offsetX, y:offsetY};
+    canvas.classList.add('dragging');
+    canvas.setPointerCapture(e.pointerId);
+  }
+});
+
+canvas.addEventListener('pointermove', (e)=>{
+  if(dragTarget === null) return;
+  const rect = canvas.getBoundingClientRect();
+  const scaleX = outputW / rect.width;
+  const scaleY = outputH / rect.height;
+  const dx = (e.clientX - dragStart.x) * scaleX;
+  const dy = (e.clientY - dragStart.y) * scaleY;
+
+  if(dragTarget === 'image'){
+    offsetX = dragOriginOffset.x + dx;
+    offsetY = dragOriginOffset.y + dy;
+  } else {
+    const layer = textLayers.find(t=>t.id === dragTarget);
+    if(layer){
+      layer.x = dragOriginOffset.x + dx;
+      layer.y = dragOriginOffset.y + dy;
+    }
+  }
+  draw();
+});
+
+['pointerup','pointerleave','pointercancel'].forEach(ev=>{
+  canvas.addEventListener(ev, ()=>{
+    dragTarget = null;
+    canvas.classList.remove('dragging');
+  });
+});
+
+window.addEventListener('resize', ()=>{
+  updateSelectionOutline();
+  if(cropModal.classList.contains('open')) renderCropRect();
+});
+
+recomputeCanvasSize();
+</script>
+</body>
+</html>
